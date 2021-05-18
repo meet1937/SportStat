@@ -2,6 +2,7 @@ package controllers;
 
 import dao.SportDao;
 import entities.Sports;
+import entities.Teams;
 import entities.Tournament;
 import helper.FactoryProvider;
 import java.util.List;
@@ -27,24 +28,6 @@ public class SportController {
         ModelAndView model = new ModelAndView("sports");
         model.addObject("sportList", sportList);
         System.out.println(sportList);
-        return model;
-    }
-
-    @RequestMapping(value = "/tournament")
-    public ModelAndView giveTournament(@RequestParam("sports_id") String sports_id) {
-        String hql = "from Tournament WHERE sport_id=:id";
-//String hql = "from tournament";
-        SessionFactory sessionFactory = FactoryProvider.getFactory();
-        Session session = sessionFactory.openSession();
-        Query query = session.createQuery(hql);
-        query.setParameter("id", Integer.parseInt(sports_id));
-        List<Tournament> tournamentList = query.list();
-//List<Tournament> tournamentList ; 
-//        tournamentList =(List<Tournament>)FactoryProvider.getFactory().openSession().createCriteria(Tournament.class).setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
-//        
-        ModelAndView model = new ModelAndView("Tournament");
-        model.addObject("tournamentList", tournamentList);
-        System.out.println(sports_id);
         return model;
     }
 
