@@ -116,61 +116,61 @@
                     <div class="col-md-12">
                         <ul id="fh5co-portfolio-list">
 
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/gallery-1.jpg); ">
+                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/splash1.jpg); ">
                                 <a href="#">
                                     <div class="case-studies-summary">
-                                        <span>Illustration</span>
-                                        <h2>Useful baskets</h2>
+                                        <span>NBA</span>
+                                        <h2>Splash Brothers in NBA: Stephen Curry and Klay Thompson</h2>
                                     </div>
                                 </a>
                             </li>
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/gallery-2.jpg); ">
+                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/rs1.jpg); ">
                                 <a href="#">
                                     <div class="case-studies-summary">
-                                        <span>Web Design</span>
-                                        <h2>Skater man in the road</h2>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/gallery-3.jpg); ">
-                                <a href="#">
-                                    <div class="case-studies-summary">
-                                        <span>Web Design</span>
-                                        <h2>Two Glas of Juice</h2>
+                                        <span>CricShorts</span>
+                                        <h2>The Golden Bat Award in 2019 was won by : Rohit Sharma</h2>
                                     </div>
                                 </a>
                             </li>
 
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/gallery-4.jpg); ">
+                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/rm.jpg); ">
                                 <a href="#">
                                     <div class="case-studies-summary">
-                                        <span>Web Design</span>
-                                        <h2>Timer starts now!</h2>
+                                        <span>Soccer</span>
+                                        <h2>Most Number of UCL won by any team : Real Madrid</h2>
                                     </div>
                                 </a>
                             </li>
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/gallery-3.jpg); ">
+
+                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/lakers.jpg); ">
                                 <a href="#">
                                     <div class="case-studies-summary">
-                                        <span>Web Design</span>
-                                        <h2>Two Glas of Juice</h2>
+                                        <span>NBA</span>
+                                        <h2>Los Angeles Lakers holds the longest streak of winning games.</h2>
                                     </div>
                                 </a>
                             </li>
-                            <li class="two-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/gallery-5.jpg); ">
+                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/fb.jpg); ">
                                 <a href="#">
                                     <div class="case-studies-summary">
-                                        <span>Illustration</span>
-                                        <h2>Beautiful sunset</h2>
+                                        <span>Soccer</span>
+                                        <h2>The first player in Soccer to win 5 Ballons d'Or is Lionel Messi.</h2>
                                     </div>
                                 </a>
                             </li>
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/gallery-3.jpg); ">
+                            <li class="two-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/lord.jpg); ">
                                 <a href="#">
                                     <div class="case-studies-summary">
-                                        <span>Web Design</span>
-                                        <h2>Two Glas of Juice</h2>
+                                        <span>CricKnowledge</span>
+                                        <h2>Home Of Cricket CLub : Lord's Cricket Ground</h2>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/cf.jpg); ">
+                                <a href="#">
+                                    <div class="case-studies-summary">
+                                        <span>NBA</span>
+                                        <h2>Chris Ford was the first person to score first 3 pointer in NBA.</h2>
                                     </div>
                                 </a>
                             </li>
@@ -184,7 +184,7 @@
             <div class="container">
                 <div class="row row-pb-md">
                     <div class="col-md-4 fh5co-widget">
-                        <h3>A Little About Stamina.</h3>
+                        <h3>A Little About StatSports.</h3>
                         <p>StateSports is an Indian sports website owned by Team Alpha. It features intresting facts about diffrent sports and live coverage of diffrent sports matches, player stats and team rankings.
                         </p>
                     </div>
