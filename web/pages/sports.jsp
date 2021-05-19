@@ -1,4 +1,3 @@
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
@@ -64,7 +63,7 @@
                                     </li>
                                     </li>
                                     <li class="active">
-                                        <a href="../SportStat/aboutus"  >Contact us</a>
+                                        <a href="../SportStat/contactus"  >Contact us</a>
                                     </li>
                                     <li class="active">
                                         <a href="../SportStat/aboutus"  >About us</a>
@@ -191,31 +190,16 @@
                 <div class="row copyright">
                     <div class="col-md-12 text-center">
                         <p>
-                            <small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small>
-                            <small class="block">Designed by
-                                <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a>
-                                Demo Images:
-                                <a href="http://unsplash.co/" target="_blank">Unsplash</a>
-                            </small>
+                            <small class="block">&copy; 2021 State Sports. All Rights Reserved.</small> 
+                            <small class="block">Designed by Team Alpha </small>
                         </p>
                         <p>
                         <ul class="fh5co-social-icons">
-                            <li>
-                                <a href="#" class="fa fa-facebook"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-twitter"></a>  
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-skype"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-instagram"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-github"></a> 
-                            </li>
-
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-github"></i></a></li>
                         </ul>
                         </p>
                     </div>
@@ -231,10 +215,10 @@
     </div>
     <script>
         function sendRequest(sports_id) {
-            if((sports_id==1) || (sports_id==2) || (sports_id==4) || (sports_id==5))
-            window.location = '../SportStat/tournament?sports_id=' + sports_id;
+            if ((sports_id == 1) || (sports_id == 2) || (sports_id == 4) || (sports_id == 5))
+                window.location = '../SportStat/tournament?sports_id=' + sports_id;
             else
-            window.location = '../SportStat/construction';
+                window.location = '../SportStat/construction';
         }
     </script>
     <!-- jQuery -->

@@ -17,7 +17,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class ContactusController {
     @RequestMapping(value = "/contactus")
     public ModelAndView giveContactPage() {
-        ModelAndView model = new ModelAndView("Aboutus");
+        ModelAndView model = new ModelAndView("Contactus");
         return model;
     }
 }

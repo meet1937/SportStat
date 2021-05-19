@@ -48,7 +48,6 @@
     <body>
         <div class="fh5co-loader"></div>
         <div id="page">
-            <div id="page">
             <nav class="fh5co-nav" role="navigation">
                 <div class="top-menu ">
                     <div class="container">
@@ -65,7 +64,7 @@
                                     </li>
                                     </li>
                                     <li class="active">
-                                        <a href="../SportStat/aboutus"  >Contact us</a>
+                                        <a href="../SportStat/contactus"  >Contact us</a>
                                     </li>
                                     <li class="active">
                                         <a href="../SportStat/aboutus"  >About us</a>
@@ -91,7 +90,7 @@
                                             <% System.out.println(request.getContextPath());%>
                                             <img src="${pageContext.request.contextPath}/resources/${tournamentList.tournament_image}" width="300px" height="300px" alt="Trulli" >
                                         </figure>
-                                        
+
                                         <h2 style="color:whitesmoke">${tournamentList.tournament_name}</h2>
                                     </div>
                                 </div>
@@ -107,7 +106,7 @@
             <div class="container">
                 <div class="row row-pb-md">
                     <div class="col-md-4 fh5co-widget">
-                        <h3>A Little About Stamina.</h3>
+                        <h3>A Little About StatSports.</h3>
                         <p>StateSports is an Indian sports website owned by Team Alpha. It features intresting facts about diffrent sports and live coverage of diffrent sports matches, player stats and team rankings.
                         </p>
                     </div>
@@ -115,31 +114,16 @@
                 <div class="row copyright">
                     <div class="col-md-12 text-center">
                         <p>
-                            <small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small>
-                            <small class="block">Designed by
-                                <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a>
-                                Demo Images:
-                                <a href="http://unsplash.co/" target="_blank">Unsplash</a>
-                            </small>
+                            <small class="block">&copy; 2021 State Sports. All Rights Reserved.</small> 
+                            <small class="block">Designed by Team Alpha </small>
                         </p>
                         <p>
                         <ul class="fh5co-social-icons">
-                            <li>
-                                <a href="#" class="fa fa-facebook"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-twitter"></a>  
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-skype"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-instagram"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-github"></a> 
-                            </li>
-
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-github"></i></a></li>
                         </ul>
                         </p>
                     </div>
@@ -155,10 +139,10 @@
     </div>
     <script>
         function sendRequest(tournament_id) {
-            if(tournament_id==1)
-            window.location = 'tournamentDetails?tournament_id=' + tournament_id;
+            if (tournament_id == 1)
+                window.location = 'tournamentDetails?tournament_id=' + tournament_id;
             else
-            window.location = '../SportStat/construction';
+                window.location = '../SportStat/construction';
         }
     </script>
     <!-- jQuery -->

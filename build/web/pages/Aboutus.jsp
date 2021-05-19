@@ -44,7 +44,6 @@
     <body>
 
         <div class="fh5co-loader"></div>
-
         <div id="page">
             <nav class="fh5co-nav" role="navigation">
                 <div class="top-menu ">
@@ -62,7 +61,7 @@
                                     </li>
                                     </li>
                                     <li class="active">
-                                        <a href="./aboutus"  >Contact us</a>
+                                        <a href="./contactus"  >Contact us</a>
                                     </li>
                                     <li class="active">
                                         <a href=""  >About us</a>
@@ -73,10 +72,6 @@
                     </div>
                 </div>
             </nav>
-
-
-
-
             <div id="fh5co-trainer">
                 <div class="container" style="background-image:url(resources/images/img_bg_2.jpg);">
                     <div class="row animate-box">
@@ -160,7 +155,7 @@
                     <div class="row">
                         <div class="col-md-3 col-sm-3 animate-box">
                             <div class="developer">
-                                <a href="#"><img class="img-responsive" src="resources/images/About/Prashant.jpeg" width="200px" height="200px"  alt="developer"></a>
+                                <a href="#"><img class="img-responsive" src="resources/images/About/prashant1.jpeg" width="200px" height="200px"  alt="developer"></a>
                                 <div class="title" style="margin-top : 5px;">
                                     <h3><a href="#">Prashant Aghara</a></h3>
                                     <span><a href="#">Front End Developer</a></span>
