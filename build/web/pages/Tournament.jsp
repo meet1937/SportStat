@@ -48,27 +48,27 @@
     <body>
         <div class="fh5co-loader"></div>
         <div id="page">
+            <div id="page">
             <nav class="fh5co-nav" role="navigation">
                 <div class="top-menu ">
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-2">
                                 <div id="fh5co-logo">
-                                    <a href="index.html">StatSports<span>.</span></a>
+                                    <a href="./"  >StatSports<span>.</span></a>
                                 </div>
                             </div>
                             <div class="col-xs-10 text-right menu-1">
                                 <ul>
                                     <li class="active">
-                                        <a href="index.html">Home</a>
+                                        <a href="./" >Home</a>
                                     </li>
-
-                                    </li>
-                                    <li class="active">
-                                        <a href="gallery.html">Contact us</a>
                                     </li>
                                     <li class="active">
-                                        <a href="contact.html">About us</a>
+                                        <a href="../SportStat/aboutus"  >Contact us</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="../SportStat/aboutus"  >About us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -89,8 +89,9 @@
                                         <img class="img-responsive" src="" alt="">
                                         <figure>
                                             <% System.out.println(request.getContextPath());%>
-                                            <img src="${pageContext.request.contextPath}/${tournamentList.tournament_image}" width="300px" height="300px" alt="Trulli" ">
+                                            <img src="${pageContext.request.contextPath}/resources/${tournamentList.tournament_image}" width="300px" height="300px" alt="Trulli" >
                                         </figure>
+                                        
                                         <h2 style="color:whitesmoke">${tournamentList.tournament_name}</h2>
                                     </div>
                                 </div>
@@ -154,7 +155,10 @@
     </div>
     <script>
         function sendRequest(tournament_id) {
+            if(tournament_id==1)
             window.location = 'tournamentDetails?tournament_id=' + tournament_id;
+            else
+            window.location = '../SportStat/construction';
         }
     </script>
     <!-- jQuery -->

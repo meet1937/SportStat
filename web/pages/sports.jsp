@@ -54,20 +54,20 @@
                         <div class="row">
                             <div class="col-xs-2">
                                 <div id="fh5co-logo">
-                                    <a href="" onclick="giveMeHome()" >StatSports<span>.</span></a>
+                                    <a href=""  >StatSports<span>.</span></a>
                                 </div>
                             </div>
                             <div class="col-xs-10 text-right menu-1">
                                 <ul>
                                     <li class="active">
-                                        <a href="" onclick="giveMeHome()" >Home</a>
+                                        <a href="" >Home</a>
                                     </li>
                                     </li>
                                     <li class="active">
-                                        <a href="" onclick="giveMeContactUs()" >Contact us</a>
+                                        <a href="../SportStat/aboutus"  >Contact us</a>
                                     </li>
                                     <li class="active">
-                                        <a href="" onclick="giveMeAboutus()" >About us</a>
+                                        <a href="../SportStat/aboutus"  >About us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -231,17 +231,10 @@
     </div>
     <script>
         function sendRequest(sports_id) {
-            window.location = 'SportStat/tournament?sports_id=' + sports_id;
-        }
-        function giveMeHome() {
-            window.location = 'SportStat/home';
-        }
-        function giveMeContactUs() {
-            window.location = 'SportStat/contactus';
-        }
-
-        function giveMeAboutus() {
-            window.location = 'SportStat/aboutus';
+            if((sports_id==1) || (sports_id==2) || (sports_id==4) || (sports_id==5))
+            window.location = '../SportStat/tournament?sports_id=' + sports_id;
+            else
+            window.location = '../SportStat/construction';
         }
     </script>
     <!-- jQuery -->
