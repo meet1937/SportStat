@@ -13,14 +13,15 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  *
- * @author LENOVO
+ * @author MEET
  */
 @Controller
-public class AboutusController {
+public class sportRedirectController {
 
-    @RequestMapping(value = "/aboutus")
-    public ModelAndView giveInitialPage() {
-        ModelAndView model = new ModelAndView("Aboutus");
+    @RequestMapping(value = "/home")
+    public ModelAndView giveHomePage() {
+        ModelAndView model = new ModelAndView("sports");
         return model;
     }
+
 }
