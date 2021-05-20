@@ -160,7 +160,8 @@
                                     <h3><a href="#">Prashant Aghara</a></h3>
                                     <span><a href="#">Front End Developer</a></span>
                                 </div>
-                                
+                                <div class="desc text-center">
+
                                     <ul class="fh5co-social-icons ">
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>

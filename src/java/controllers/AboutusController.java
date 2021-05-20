@@ -17,11 +17,10 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Controller
 public class AboutusController {
-     @RequestMapping(value = "/about")
+
+    @RequestMapping(value = "/aboutus")
     public ModelAndView giveInitialPage() {
-        
         ModelAndView model = new ModelAndView("Aboutus");
-       
         return model;
     }
 }

@@ -54,21 +54,20 @@
                         <div class="row">
                             <div class="col-xs-2">
                                 <div id="fh5co-logo">
-                                    <a href="index.html">StatSports<span>.</span></a>
+                                    <a href="./"  >StatSports<span>.</span></a>
                                 </div>
                             </div>
                             <div class="col-xs-10 text-right menu-1">
                                 <ul>
                                     <li class="active">
-                                        <a href="index.html">Home</a>
+                                        <a href="./" >Home</a>
                                     </li>
-
-                                    </li>
-                                    <li class="active">
-                                        <a href="gallery.html">Contact us</a>
                                     </li>
                                     <li class="active">
-                                        <a href="contact.html">About us</a>
+                                        <a href="../SportStat/contactus"  >Contact us</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="../SportStat/aboutus"  >About us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -89,8 +88,9 @@
                                         <img class="img-responsive" src="" alt="">
                                         <figure>
                                             <% System.out.println(request.getContextPath());%>
-                                            <img src="${pageContext.request.contextPath}/${tournamentList.tournament_image}" width="300px" height="300px" alt="Trulli" ">
+                                            <img src="${pageContext.request.contextPath}/resources/${tournamentList.tournament_image}" width="300px" height="300px" alt="Trulli" >
                                         </figure>
+
                                         <h2 style="color:whitesmoke">${tournamentList.tournament_name}</h2>
                                     </div>
                                 </div>
@@ -100,89 +100,13 @@
                 </div>
             </header>
         </div>
-        <div id="fh5co-gallery">
-            <div class="container">
-                <div class="row fuck">
-                    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-                        <h2>Sports gallery</h2>
-                        <p>Here are some intresting facts about diffrent sports.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row row-bottom-padded-md">
-                    <div class="col-md-12">
-                        <ul id="fh5co-portfolio-list">
 
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/gallery-1.jpg); ">
-                                <a href="#">
-                                    <div class="case-studies-summary">
-                                        <span>Illustration</span>
-                                        <h2>Useful baskets</h2>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/gallery-2.jpg); ">
-                                <a href="#">
-                                    <div class="case-studies-summary">
-                                        <span>Web Design</span>
-                                        <h2>Skater man in the road</h2>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/gallery-3.jpg); ">
-                                <a href="#">
-                                    <div class="case-studies-summary">
-                                        <span>Web Design</span>
-                                        <h2>Two Glas of Juice</h2>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/gallery-4.jpg); ">
-                                <a href="#">
-                                    <div class="case-studies-summary">
-                                        <span>Web Design</span>
-                                        <h2>Timer starts now!</h2>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/gallery-3.jpg); ">
-                                <a href="#">
-                                    <div class="case-studies-summary">
-                                        <span>Web Design</span>
-                                        <h2>Two Glas of Juice</h2>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="two-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/gallery-5.jpg); ">
-                                <a href="#">
-                                    <div class="case-studies-summary">
-                                        <span>Illustration</span>
-                                        <h2>Beautiful sunset</h2>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(${pageContext.request.contextPath}/resources/images/gallery-3.jpg); ">
-                                <a href="#">
-                                    <div class="case-studies-summary">
-                                        <span>Web Design</span>
-                                        <h2>Two Glas of Juice</h2>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
         <footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(${pageContext.request.contextPath}/resources/images/img_bg_1.jpg);" role="contentinfo">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row row-pb-md">
                     <div class="col-md-4 fh5co-widget">
-                        <h3>A Little About Stamina.</h3>
+                        <h3>A Little About StatSports.</h3>
                         <p>StateSports is an Indian sports website owned by Team Alpha. It features intresting facts about diffrent sports and live coverage of diffrent sports matches, player stats and team rankings.
                         </p>
                     </div>
@@ -190,31 +114,16 @@
                 <div class="row copyright">
                     <div class="col-md-12 text-center">
                         <p>
-                            <small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small>
-                            <small class="block">Designed by
-                                <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a>
-                                Demo Images:
-                                <a href="http://unsplash.co/" target="_blank">Unsplash</a>
-                            </small>
+                            <small class="block">&copy; 2021 State Sports. All Rights Reserved.</small> 
+                            <small class="block">Designed by Team Alpha </small>
                         </p>
                         <p>
                         <ul class="fh5co-social-icons">
-                            <li>
-                                <a href="#" class="fa fa-facebook"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-twitter"></a>  
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-skype"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-instagram"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-github"></a> 
-                            </li>
-
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-github"></i></a></li>
                         </ul>
                         </p>
                     </div>
@@ -230,7 +139,10 @@
     </div>
     <script>
         function sendRequest(tournament_id) {
-            window.location = 'tournamentDetails?tournament_id=' + tournament_id;
+            if (tournament_id == 1)
+                window.location = 'tournamentDetails?tournament_id=' + tournament_id;
+            else
+                window.location = '../SportStat/construction';
         }
     </script>
     <!-- jQuery -->
