@@ -9,13 +9,25 @@
     </head>
     <body>
         <h1>Hello World!</h1>.
-    <c:forEach var="groundList" items="${groundList}" >
-        ${groundList.ground_id}---
-        ${groundList.ground_name}---
-        ${groundList.city}---
-        ${groundList.country}---
-        ${groundList.tournament_id}---
-        <br>
-    </c:forEach>
-</body>
+        <c:forEach var="groundList" items="${groundList}" >
+            <div id="${groundList.ground_id}" onclick="sendGroundId(${groundList.ground_id})">
+                ${groundList.ground_id}---
+                ${groundList.ground_name}---
+                ${groundList.city}---
+                ${groundList.country}---
+                ${groundList.tournament_id}---
+                <div>
+                    
+                </div>
+                <br>
+            </div>
+
+        </c:forEach>
+        <script>
+            function sendGroundId(ground_id)
+            {
+                window.location = 'groundscore?ground_id=' + ground_id + '&tournament_id='+ ${param.tournament_id};
+            }
+        </script>
+    </body>
 </html>

@@ -48,8 +48,7 @@
 
     </head>
     <body>
-<!--        <button id="${param.tournament_id}" onclick="sendRequestTeam(${param.tournament_id})">teams</button>
-        <button id="${param.tournament_id}" onclick="sendRequestGround(${param.tournament_id})">ground</button>-->
+        
         <div class="fh5co-loader"></div>
         <div id="page">
             <nav class="fh5co-nav" role="navigation">
@@ -83,120 +82,121 @@
             <header id="fh5co-header" class="fh5co-cover" role="banner" data-stellar-background-ratio="0.5">
                 <div class="overlay"></div>
                 <div id="fh5co-services" class="fh5co-bg-section testing">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4 text-center animate-box">
-                                <div class="services column" id="" onclick="sendRequest(${tournamentList.tournament_id})">
-                                    <img class="img-responsive" src="" alt="">
-                                    <figure>
-                                        <img src="" width="300px" height="300px" alt="Trulli" >
-                                    </figure>
-                                    <h2 style="color:whitesmoke">Teams</h2>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 text-center animate-box">
+                                    <div class="services column" id="" onclick="sendRequestTeam(${param.tournament_id})">
+                                        <img class="img-responsive" src="" alt="">
+                                        <figure>
+                                            <img src="" width="300px" height="300px" alt="Trulli" >
+                                        </figure>
+                                        <h2 style="color:whitesmoke">Teams</h2>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 text-center animate-box">
-                                <div class="services column" id="" onclick="sendRequest(${tournamentList.tournament_id})">
-                                    <img class="img-responsive" src="" alt="">
-                                    <figure>
-                                        <img src="" width="300px" height="300px" alt="Trulli" >
-                                    </figure>
-                                    <h2 style="color:whitesmoke">Ground</h2>
+                                <div class="col-md-4 text-center animate-box">
+                                    <div class="services column" id="" onclick="sendRequestGround(${param.tournament_id})">
+                                        <img class="img-responsive" src="" alt="">
+                                        <figure>
+                                            <img src="" width="300px" height="300px" alt="Trulli" >
+                                        </figure>
+                                        <h2 style="color:whitesmoke">Ground</h2>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 text-center animate-box">
-                                <div class="services column" id="" onclick="sendRequest(${tournamentList.tournament_id})">
-                                    <img class="img-responsive" src="" alt="">
-                                    <figure>
-                                        <img src="" width="300px" height="300px" alt="Trulli" >
-                                    </figure>
-                                    <h2 style="color:whitesmoke">Player</h2>
+                                <div class="col-md-4 text-center animate-box">
+                                    <div class="services column" id="" onclick="">
+                                        <img class="img-responsive" src="" alt="">
+                                        <figure>
+                                            <img src="" width="300px" height="300px" alt="Trulli" >
+                                        </figure>
+                                        <h2 style="color:whitesmoke">Player</h2>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 text-center animate-box">
-                                <div class="services column" id="" onclick="sendRequest(${tournamentList.tournament_id})">
-                                    <img class="img-responsive" src="" alt="">
-                                    <figure>
-                                        <img src="" width="300px" height="300px" alt="Trulli" >
-                                    </figure>
-                                    <h2 style="color:whitesmoke">Team vs Team</h2>
+                                <div class="col-md-4 text-center animate-box">
+                                    <div class="services column" id="" onclick="">
+                                        <img class="img-responsive" src="" alt="">
+                                        <figure>
+                                            <img src="" width="300px" height="300px" alt="Trulli" >
+                                        </figure>
+                                        <h2 style="color:whitesmoke">Team vs Team</h2>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </header>
+            </div>
+
+            <footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(${pageContext.request.contextPath}/resources/images/img_bg_1.jpg);" role="contentinfo">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row row-pb-md">
+                        <div class="col-md-4 fh5co-widget">
+                            <h3>A Little About StatSports.</h3>
+                            <p>StateSports is an Indian sports website owned by Team Alpha. It features intresting facts about diffrent sports and live coverage of diffrent sports matches, player stats and team rankings.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row copyright">
+                        <div class="col-md-12 text-center">
+                            <p>
+                                <small class="block">&copy; 2021 State Sports. All Rights Reserved.</small> 
+                                <small class="block">Designed by Team Alpha </small>
+                            </p>
+                            <p>
+                            <ul class="fh5co-social-icons">
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </header>
+            </footer>
         </div>
 
-        <footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(${pageContext.request.contextPath}/resources/images/img_bg_1.jpg);" role="contentinfo">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row row-pb-md">
-                    <div class="col-md-4 fh5co-widget">
-                        <h3>A Little About StatSports.</h3>
-                        <p>StateSports is an Indian sports website owned by Team Alpha. It features intresting facts about diffrent sports and live coverage of diffrent sports matches, player stats and team rankings.
-                        </p>
-                    </div>
-                </div>
-                <div class="row copyright">
-                    <div class="col-md-12 text-center">
-                        <p>
-                            <small class="block">&copy; 2021 State Sports. All Rights Reserved.</small> 
-                            <small class="block">Designed by Team Alpha </small>
-                        </p>
-                        <p>
-                        <ul class="fh5co-social-icons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-github"></i></a></li>
-                        </ul>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+        <div class="gototop js-top">
+            <a href="#" class="js-gotop">
+                <i class="fa fa-angle-double-up" style="font-size:48px;color:red"></i>
+            </a>
+        </div>
 
-    <div class="gototop js-top">
-        <a href="#" class="js-gotop">
-            <i class="fa fa-angle-double-up" style="font-size:48px;color:red"></i>
-        </a>
-    </div>
-
-    <div class="gototop js-top">
-        <a href="#" class="js-gotop">
-            <i class="fa fa-angle-double-up" style="font-size:48px;color:red"></i>
-        </a>
-    </div> 
-    <script>
-        function sendRequestTeam(tournament_id) {
-            window.location = 'team?tournament_id=' + tournament_id;
-        }
-        function sendRequestGround(tournament_id) {
-            window.location = 'ground?tournament_id=' + tournament_id;
-        }
+        <div class="gototop js-top">
+            <a href="#" class="js-gotop">
+                <i class="fa fa-angle-double-up" style="font-size:48px;color:red"></i>
+            </a>
+        </div> 
+        <script>
+            function sendRequestTeam(tournament_id) {
+                window.location = 'team?tournament_id=' + tournament_id;
+                console.log(tournament_id);
+            }
+            function sendRequestGround(tournament_id) {
+                window.location = 'ground?tournament_id=' + tournament_id;
+            }
+        </script>
     </script>
-</script>
-<!-- jQuery -->
-<script src="${pageContext.request.contextPath}/resources/js/jquery.min.js"></script>
-<!-- jQuery Easing -->
-<script src="${pageContext.request.contextPath}/resources/js/jquery.easing.1.3.js"></script>
-<!-- Bootstrap -->
-<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
-<!-- Waypoints -->
-<script src="${pageContext.request.contextPath}/resources/js/jquery.waypoints.min.js"></script>
-<!-- Stellar Parallax -->
-<script src="${pageContext.request.contextPath}/resources/js/jquery.stellar.min.js"></script>
-<!-- Carousel -->
-<script src="${pageContext.request.contextPath}/resources/js/owl.carousel.min.js"></script>
-<!-- countTo -->
-<script src="${pageContext.request.contextPath}/resources/js/jquery.countTo.js"></script>
-<!-- Magnific Popup -->
-<script src="${pageContext.request.contextPath}/resources/js/jquery.magnific-popup.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/js/magnific-popup-options.js"></script>
-<!-- Main -->
-<script src="${pageContext.request.contextPath}/resources/js/main.js"></script>
-<script src="${pageContext.request.contextPath}/resources/js/modernizr-2.6.2.min.js"></script>
+    <!-- jQuery -->
+    <script src="${pageContext.request.contextPath}/resources/js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="${pageContext.request.contextPath}/resources/js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="${pageContext.request.contextPath}/resources/js/jquery.waypoints.min.js"></script>
+    <!-- Stellar Parallax -->
+    <script src="${pageContext.request.contextPath}/resources/js/jquery.stellar.min.js"></script>
+    <!-- Carousel -->
+    <script src="${pageContext.request.contextPath}/resources/js/owl.carousel.min.js"></script>
+    <!-- countTo -->
+    <script src="${pageContext.request.contextPath}/resources/js/jquery.countTo.js"></script>
+    <!-- Magnific Popup -->
+    <script src="${pageContext.request.contextPath}/resources/js/jquery.magnific-popup.min.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/js/magnific-popup-options.js"></script>
+    <!-- Main -->
+    <script src="${pageContext.request.contextPath}/resources/js/main.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/js/modernizr-2.6.2.min.js"></script>
 </body>
 </html>

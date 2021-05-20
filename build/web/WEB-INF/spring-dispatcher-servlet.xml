@@ -42,5 +42,6 @@
     <bean id="sportsDao" class="daoimplementation.SportDaoImpl" /> 
     <bean id="tournamentDao" class="daoimplementation.TournamentDaoImpl" /> 
     <bean id="teamDao" class="daoimplementation.TeamDaoImpl" />
-     <bean id="groundDao" class="daoimplementation.GroundDaoImpl" />     
+    <bean id="groundDao" class="daoimplementation.GroundDaoImpl" />  
+    <bean id="matchesDao" class="daoimplementation.MatchesDaoImpl" />      
 </beans>
