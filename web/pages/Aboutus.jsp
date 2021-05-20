@@ -44,34 +44,34 @@
     <body>
 
         <div class="fh5co-loader"></div>
-
         <div id="page">
             <nav class="fh5co-nav" role="navigation">
-
-                <div class="top-menu">
+                <div class="top-menu ">
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-2">
-                                <div id="fh5co-logo"><a href="index.html">StatSports<span>.</span></a></div>
+                                <div id="fh5co-logo">
+                                    <a href="./"  >StatSports<span>.</span></a>
+                                </div>
                             </div>
                             <div class="col-xs-10 text-right menu-1">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-
-                                    <li><a href="contact.html">Contact us</a></li>
-                                    <li class="active"><a href="about.html">About us</a></li>
-                                    <!-- <li class="btn-cta"><a href="#"><span>Login</span></a></li> -->
+                                    <li class="active">
+                                        <a href="./"  >Home</a>
+                                    </li>
+                                    </li>
+                                    <li class="active">
+                                        <a href="./contactus"  >Contact us</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href=""  >About us</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </nav>
-
-
-
-
             <div id="fh5co-trainer">
                 <div class="container" style="background-image:url(resources/images/img_bg_2.jpg);">
                     <div class="row animate-box">
@@ -85,140 +85,140 @@
                     <div class="row">
                         <div class="col-md-3 col-sm-3 animate-box">
                             <div class="developer">
-                                <a href="#"><img class="img-responsive" src="resources/images/Aboutus/Jaydutt.jpeg" width="200px" height="200px" alt="developer"></a>
+                                <a href="#"><img class="img-responsive" src="resources/images/About/Jaydutt.jpeg" width="200px" height="200px" alt="developer"></a>
                                 <div class="title">
                                     <h3><a href="#">Jaydutt Desai</a></h3>
                                     <span><a href="#">Front End Developer</a></span>
                                 </div>
-                                <div class="desc text-center">
+                                
                                     <ul class="fh5co-social-icons">
-                                        <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                        <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li> 
                                     </ul>
-                                </div>
+                                
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 animate-box">
                             <div class="developer">
-                                <a href="#"><img class="img-responsive" src="resources/images/Aboutus/Meet.jpeg" width="200px" height="200px" alt="developer"></a>
+                                <a href="#"><img class="img-responsive" src="resources/images/About/Meet.jpeg" width="200px" height="200px" alt="developer"></a>
                                 <div class="title">
                                     <h3><a href="#">Meet Dhami</a></h3>
                                     <span><a href="#">Back End Developer</a></span>
                                 </div>
-                                <div class="desc text-center">
+                               
                                     <ul class="fh5co-social-icons">
-                                        <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                        <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
-                                </div>
+                               
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 animate-box">
                             <div class="developer">
-                                <a href="#"><img class="img-responsive" src="resources/images/Aboutus/Aayush.jpg" width="200px" height=100% alt="developer"></a>
+                                <a href="#"><img class="img-responsive" src="resources/images/About/Aayush.jpg" width="200px" height=100% alt="developer"></a>
                                 <div class="title">
                                     <h3><a href="#">Aayush Dalal</a></h3>
                                     <span><a href="#">Front End Developer</a></span>
                                 </div>
-                                <div class="desc text-center">
+                                
                                     <ul class="fh5co-social-icons">
-                                        <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                        <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
-                                </div>
+                                
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 animate-box">
                             <div class="developer">
-                                <a href="#"><img class="img-responsive" src="resources/images/Aboutus/Dhiraj.jpeg" width="200px" height="200px"alt="developer"></a>
+                                <a href="#"><img class="img-responsive" src="resources/images/About/Dhiraj.jpeg" width="200px" height="200px"alt="developer"></a>
                                 <div class="title">
                                     <h3><a href="#">Dhiraj Dunani</a></h3>
                                     <span><a href="#">Back End Developer</a></span>
                                 </div>
-                                <div class="desc text-center">
+                                
                                     <ul class="fh5co-social-icons">
-                                        <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                        <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-3 col-sm-3 animate-box">
                             <div class="developer">
-                                <a href="#"><img class="img-responsive" src="resources/images/Aboutus/Prashant.jpeg" width="200px" height="200px"  alt="developer"></a>
-                                <div class="title">
+                                <a href="#"><img class="img-responsive" src="resources/images/About/prashant1.jpeg" width="200px" height="200px"  alt="developer"></a>
+                                <div class="title" style="margin-top : 5px;">
                                     <h3><a href="#">Prashant Aghara</a></h3>
                                     <span><a href="#">Front End Developer</a></span>
                                 </div>
-                                <div class="desc text-center">
-                                    <ul class="fh5co-social-icons">
-                                        <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                        <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                                
+                                    <ul class="fh5co-social-icons ">
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
-                                </div>
+                               
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 animate-box">
                             <div class="developer">
-                                <a href="#"><img class="img-responsive" src="resources/images/Aboutus/Maulik.jpeg" width="200px" height="200px"alt="developer"></a>
+                                <a href="#"><img class="img-responsive" src="resources/images/About/Maulik.jpeg" width="200px" height="200px"alt="developer"></a>
                                 <div class="title">
                                     <h3><a href="#">Maulik Gandhi</a></h3>
                                     <span><a href="#">Back End Developer</a></span>
                                 </div>
-                                <div class="desc text-center">
+                               
                                     <ul class="fh5co-social-icons">
-                                        <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                        <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
-                                </div>
+                               
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 animate-box">
                             <div class="developer">
-                                <a href="#"><img class="img-responsive" width="200px" height="200px" src="resources/images/Aboutus/ayush.jpeg" alt="developer"></a>
+                                <a href="#"><img class="img-responsive" width="200px" height="200px" src="resources/images/About/ayush.jpeg" alt="developer"></a>
                                 <div class="title">
                                     <h3><a href="#">Ayush Gandhi</a></h3>
                                     <span><a href="#">Front End Developer</a></span>
                                 </div>
-                                <div class="desc text-center">
+                                
                                     <ul class="fh5co-social-icons">
-                                        <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                        <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
-                                </div>
+                               
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 animate-box">
                             <div class="developer">
-                                <a href="#"><img class="img-responsive" width="200px" height="200px" src="resources/images/Aboutus/Avinash.jpeg" alt="developer"></a>
+                                <a href="#"><img class="img-responsive" width="200px" height="200px" src="resources/images/About/Avinash.jpeg" alt="developer"></a>
                                 <div class="title">
                                     <h3><a href="#">Avinash Hargun</a></h3>
                                     <span><a href="#">Front End Developer</a></span>
                                 </div>
-                                <div class="desc text-center">
+                                
                                     <ul class="fh5co-social-icons">
-                                        <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                        <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -230,7 +230,7 @@
 
 
 
-        <footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(resources/images/img_bg_1.jpg);" role="contentinfo">
+        <footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(${pageContext.request.contextPath}/resources/images/img_bg_1.jpg);" role="contentinfo">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row row-pb-md">
@@ -248,11 +248,11 @@
                             </p>
                             <p>
                             <ul class="fh5co-social-icons">
-                                <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                                <li><a href="#"><i class="icon-instagram"></i></a></li>
-                                <li><a href="#"><i class="icon-github"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
                             </ul>
                             </p>
                         </div>
@@ -263,7 +263,9 @@
     </div>
 
     <div class="gototop js-top">
-        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+        <a href="#" class="js-gotop">
+            <i class="fa fa-angle-double-up" style="font-size:48px;color:red"></i>
+        </a>
     </div>
 
     <!-- jQuery -->
