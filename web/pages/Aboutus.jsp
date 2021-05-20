@@ -90,14 +90,14 @@
                                     <h3><a href="#">Jaydutt Desai</a></h3>
                                     <span><a href="#">Front End Developer</a></span>
                                 </div>
-                                <div class="desc text-center">
+                                
                                     <ul class="fh5co-social-icons">
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                         <li><a href="#"><i class="fa fa-instagram"></i></a></li> 
                                     </ul>
-                                </div>
+                                
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 animate-box">
@@ -107,14 +107,14 @@
                                     <h3><a href="#">Meet Dhami</a></h3>
                                     <span><a href="#">Back End Developer</a></span>
                                 </div>
-                                <div class="desc text-center">
+                               
                                     <ul class="fh5co-social-icons">
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
-                                </div>
+                               
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 animate-box">
@@ -124,14 +124,14 @@
                                     <h3><a href="#">Aayush Dalal</a></h3>
                                     <span><a href="#">Front End Developer</a></span>
                                 </div>
-                                <div class="desc text-center">
+                                
                                     <ul class="fh5co-social-icons">
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
-                                </div>
+                                
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 animate-box">
@@ -141,14 +141,14 @@
                                     <h3><a href="#">Dhiraj Dunani</a></h3>
                                     <span><a href="#">Back End Developer</a></span>
                                 </div>
-                                <div class="desc text-center">
+                                
                                     <ul class="fh5co-social-icons">
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -161,13 +161,14 @@
                                     <span><a href="#">Front End Developer</a></span>
                                 </div>
                                 <div class="desc text-center">
+
                                     <ul class="fh5co-social-icons ">
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
-                                </div>
+                               
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 animate-box">
@@ -177,14 +178,14 @@
                                     <h3><a href="#">Maulik Gandhi</a></h3>
                                     <span><a href="#">Back End Developer</a></span>
                                 </div>
-                                <div class="desc text-center">
+                               
                                     <ul class="fh5co-social-icons">
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
-                                </div>
+                               
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 animate-box">
@@ -194,14 +195,14 @@
                                     <h3><a href="#">Ayush Gandhi</a></h3>
                                     <span><a href="#">Front End Developer</a></span>
                                 </div>
-                                <div class="desc text-center">
+                                
                                     <ul class="fh5co-social-icons">
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
-                                </div>
+                               
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 animate-box">
@@ -211,14 +212,14 @@
                                     <h3><a href="#">Avinash Hargun</a></h3>
                                     <span><a href="#">Front End Developer</a></span>
                                 </div>
-                                <div class="desc text-center">
+                                
                                     <ul class="fh5co-social-icons">
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                     </ul>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
