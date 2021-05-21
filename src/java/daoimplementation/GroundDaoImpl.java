@@ -32,7 +32,7 @@ public class GroundDaoImpl implements GroundDao {
         return groundList;
     }
     public List<Object[]> getGroundData(int ground_id, int tournament_id){
-        String hql = "select count(ground_id), cast(round(avg(score_team1)) as int),cast(round(avg(score_team2)) as int),cast(round(avg(wicket_team1)) as int),cast(round(avg(wicket_team2)) as int),max(score_team1),max(score_team2) from Matches where  tournament_id=:tournament_id AND ground_id=:ground_id";
+        String hql = "select count(ground_id), cast( round(avg(score_team1)) as int),cast( round( avg(score_team2)) as int),cast( round(avg(wicket_team1)) as int),cast( round( avg(wicket_team2)) as int),max(score_team1),max(score_team2) from Matches where  tournament_id=:tournament_id AND ground_id=:ground_id";
         SessionFactory sessionFactory = FactoryProvider.getFactory();
         Session session = sessionFactory.openSession();
         Query query = session.createQuery(hql);
