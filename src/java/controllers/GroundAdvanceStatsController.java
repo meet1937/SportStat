@@ -5,8 +5,7 @@
  */
 package controllers;
 
-import dao.MatchesDao;
-import entities.Matches;
+import dao.GroundDao;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,14 +21,14 @@ import org.springframework.web.servlet.ModelAndView;
 public class GroundAdvanceStatsController {
 
     @Autowired
-    MatchesDao matchesDao;
+    GroundDao groundDao;
 
     @RequestMapping(value = "/groundscore")
-    public ModelAndView giveAdvanceGroundStats(@RequestParam("ground_id") String ground_id, @RequestParam("tournament_id") String tournament_id) {
+    public ModelAndView giveAdvanceGroundStats(@RequestParam("ground_id") int ground_id, @RequestParam("tournament_id") int tournament_id) {
         ModelAndView model = new ModelAndView("Ground_score");
-        List<Matches> matchesList = matchesDao.getMatch(Integer.parseInt(ground_id), Integer.parseInt(tournament_id));
-        model.addObject("matchesList", matchesList);
-        System.out.println(matchesList);
+        List<Object[]> GroundDataList= groundDao.getGroundData(ground_id, tournament_id);
+        model.addObject("GroundDataList", GroundDataList);
+        System.out.println(GroundDataList);
         return model;
     }
 }

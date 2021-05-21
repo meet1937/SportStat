@@ -32,13 +32,12 @@ public class Matches implements Serializable{
     String player_of_match;
     int ground_id;
     String score_team1;
+    String wicket_team1 ; 
     String score_team2;
+    String wicket_team2 ; 
     int tournament_id;
 
-    public Matches() {
-    }
-
-    public Matches(int season, String date, int team1, int team2, int toss_winner, String toss_decision, String result, int winner, int win_by_runs, int win_by_wickets, String player_of_match, int ground_id, String score_team1, String score_team2, int tournament_id) {
+    public Matches(int season, String date, int team1, int team2, int toss_winner, String toss_decision, String result, int winner, int win_by_runs, int win_by_wickets, String player_of_match, int ground_id, String score_team1, String wicket_team1, String score_team2, String wicket_team2, int tournament_id) {
         this.season = season;
         this.date = date;
         this.team1 = team1;
@@ -52,7 +51,9 @@ public class Matches implements Serializable{
         this.player_of_match = player_of_match;
         this.ground_id = ground_id;
         this.score_team1 = score_team1;
+        this.wicket_team1 = wicket_team1;
         this.score_team2 = score_team2;
+        this.wicket_team2 = wicket_team2;
         this.tournament_id = tournament_id;
     }
 
@@ -168,12 +169,28 @@ public class Matches implements Serializable{
         this.score_team1 = score_team1;
     }
 
+    public String getWicket_team1() {
+        return wicket_team1;
+    }
+
+    public void setWicket_team1(String wicket_team1) {
+        this.wicket_team1 = wicket_team1;
+    }
+
     public String getScore_team2() {
         return score_team2;
     }
 
     public void setScore_team2(String score_team2) {
         this.score_team2 = score_team2;
+    }
+
+    public String getWicket_team2() {
+        return wicket_team2;
+    }
+
+    public void setWicket_team2(String wicket_team2) {
+        this.wicket_team2 = wicket_team2;
     }
 
     public int getTournament_id() {
@@ -186,7 +203,8 @@ public class Matches implements Serializable{
 
     @Override
     public String toString() {
-        return "Matches{" + "match_id=" + match_id + ", season=" + season + ", date=" + date + ", team1=" + team1 + ", team2=" + team2 + ", toss_winner=" + toss_winner + ", toss_decision=" + toss_decision + ", result=" + result + ", winner=" + winner + ", win_by_runs=" + win_by_runs + ", win_by_wickets=" + win_by_wickets + ", player_of_match=" + player_of_match + ", ground_id=" + ground_id + ", score_team1=" + score_team1 + ", score_team2=" + score_team2 + ", tournament_id=" + tournament_id + '}';
+        return "Matches{" + "match_id=" + match_id + ", season=" + season + ", date=" + date + ", team1=" + team1 + ", team2=" + team2 + ", toss_winner=" + toss_winner + ", toss_decision=" + toss_decision + ", result=" + result + ", winner=" + winner + ", win_by_runs=" + win_by_runs + ", win_by_wickets=" + win_by_wickets + ", player_of_match=" + player_of_match + ", ground_id=" + ground_id + ", score_team1=" + score_team1 + ", wicket_team1=" + wicket_team1 + ", score_team2=" + score_team2 + ", wicket_team2=" + wicket_team2 + ", tournament_id=" + tournament_id + '}';
     }
+    
     
 }

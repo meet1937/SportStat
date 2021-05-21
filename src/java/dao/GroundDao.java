@@ -14,5 +14,5 @@ import java.util.List;
  */
 public interface GroundDao {
    public List<Ground> getGround(int id );
-   public List<Object[]> getGroundDate(int ground_id, int tournament_id);
+   public List<Object[]> getGroundData(int ground_id, int tournament_id);
 }
