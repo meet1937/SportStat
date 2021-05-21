@@ -5,16 +5,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        
     </head>
     <body>
-        <button id="dhiruchoido" onclick="dhiruchoido1()">2021</button>
-        <div id="batli">
-
-
-        </div>
+        
         <script>
-            function dhiruchoido1()
+           
+        </script>
+    </body>
+</html>
+function dhiruchoido1()
             {
                 var employees = {
                 <c:forEach var="matches" items="${matchesList}">
@@ -35,6 +35,3 @@
             };
             console.log(employees);
             }
-        </script>
-    </body>
-</html>

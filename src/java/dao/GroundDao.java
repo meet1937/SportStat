@@ -13,5 +13,6 @@ import java.util.List;
  * @author MEET
  */
 public interface GroundDao {
-    public List<Ground> getGround(int id );
+   public List<Ground> getGround(int id );
+   public List<Object[]> getGroundDate(int ground_id, int tournament_id);
 }

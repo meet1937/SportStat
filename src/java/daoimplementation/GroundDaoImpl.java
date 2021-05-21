@@ -28,6 +28,14 @@ public class GroundDaoImpl implements GroundDao {
         Query query = session.createQuery(hql);
         query.setParameter("id", id);
         List<Ground> groundList = query.list();
+        session.close();
         return groundList;
+    }
+    public List<Object[]> getGroundDate(int ground_id, int tournament_id){
+        String hql = "select count(ground_id): avg()";
+        SessionFactory sessionFactory = FactoryProvider.getFactory();
+        Session session = sessionFactory.openSession();
+        Query query = session.createQuery(hql);
+        query.setParameter("id", id);
     }
 }
