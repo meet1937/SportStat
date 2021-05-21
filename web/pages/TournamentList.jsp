@@ -65,7 +65,7 @@
                                     <li class="active">
                                         <a href="./" >Home</a>
                                     </li>
-                                    </li>
+                                    
                                     <li class="active">
                                         <a href="../SportStat/contactus"  >Contact us</a>
                                     </li>
@@ -88,7 +88,7 @@
                                     <div class="services column" id="" onclick="sendRequestTeam(${param.tournament_id})">
                                         <img class="img-responsive" src="" alt="">
                                         <figure>
-                                            <img src="" width="300px" height="300px" alt="Trulli" >
+                                            <img src="resources/images/ipl/team.jpg" width="300px" height="300px" alt="Trulli" >
                                         </figure>
                                         <h2 style="color:whitesmoke">Teams</h2>
                                     </div>
@@ -97,7 +97,7 @@
                                     <div class="services column" id="" onclick="sendRequestGround(${param.tournament_id})">
                                         <img class="img-responsive" src="" alt="">
                                         <figure>
-                                            <img src="" width="300px" height="300px" alt="Trulli" >
+                                            <img src="resources/images/ipl/ground.jpg" width="300px" height="300px" alt="Trulli" >
                                         </figure>
                                         <h2 style="color:whitesmoke">Ground</h2>
                                     </div>
@@ -106,7 +106,7 @@
                                     <div class="services column" id="" onclick="">
                                         <img class="img-responsive" src="" alt="">
                                         <figure>
-                                            <img src="" width="300px" height="300px" alt="Trulli" >
+                                           <img src="resources/images/ipl/player.jpg" width="300px" height="300px" alt="Trulli" >
                                         </figure>
                                         <h2 style="color:whitesmoke">Player</h2>
                                     </div>
@@ -115,7 +115,7 @@
                                     <div class="services column" id="" onclick="">
                                         <img class="img-responsive" src="" alt="">
                                         <figure>
-                                            <img src="" width="300px" height="300px" alt="Trulli" >
+                                            <img src="resources/images/ipl/team_vs_team.jpg" width="300px" height="300px" alt="Trulli" >
                                         </figure>
                                         <h2 style="color:whitesmoke">Team vs Team</h2>
                                     </div>
