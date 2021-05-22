@@ -32,12 +32,28 @@ public class GroundDaoImpl implements GroundDao {
         return groundList;
     }
     public List<Object[]> getGroundData(int ground_id, int tournament_id){
-        String hql = "select count(ground_id), cast( round(avg(score_team1)) as int),cast( round( avg(score_team2)) as int),cast( round(avg(wicket_team1)) as int),cast( round( avg(wicket_team2)) as int),max(score_team1),max(score_team2) from Matches where  tournament_id=:tournament_id AND ground_id=:ground_id";
+        String hql = "select count(ground_id), cast( round(avg(score_team1)) as int),cast( round( avg(score_team2)) as int),cast( round(avg(wicket_team1)) as int),cast( round( avg(wicket_team2)) as int),max(score_team1),max(score_team2),(select count(*) from Matches where team1 = winner AND  tournament_id=:tournament_id AND ground_id=:ground_id ) from Matches where  tournament_id=:tournament_id AND ground_id=:ground_id";
         SessionFactory sessionFactory = FactoryProvider.getFactory();
         Session session = sessionFactory.openSession();
         Query query = session.createQuery(hql);
         query.setParameter("tournament_id", tournament_id);
         query.setParameter("ground_id", ground_id);
+        List<Object[]> GroundDataList= (List<Object[]>)query.list();
+        session.close();
+        return GroundDataList;
+        
+    }
+ 
+    
+    @Override
+    public List<Object[]> getGroundDataYear(int ground_id, int tournament_id,int year){
+        String hql = "select count(ground_id), cast( round(avg(score_team1)) as int),cast( round( avg(score_team2)) as int),cast( round(avg(wicket_team1)) as int),cast( round( avg(wicket_team2)) as int),max(score_team1),max(score_team2),(select count(*) from Matches where team1 = winner AND  tournament_id=:tournament_id AND ground_id=:ground_id ANd season=:year ) from Matches where  tournament_id=:tournament_id AND ground_id=:ground_id AND season=:year";
+        SessionFactory sessionFactory = FactoryProvider.getFactory();
+        Session session = sessionFactory.openSession();
+        Query query = session.createQuery(hql);
+        query.setParameter("tournament_id", tournament_id);
+        query.setParameter("ground_id", ground_id);
+        query.setParameter("year", year);
         List<Object[]> GroundDataList= (List<Object[]>)query.list();
         session.close();
         return GroundDataList;
