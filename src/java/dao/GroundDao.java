@@ -13,8 +13,12 @@ import java.util.List;
  * @author MEET
  */
 public interface GroundDao {
-   public List<Ground> getGround(int id );
-   public List<Object[]> getGroundData(int ground_id, int tournament_id);
-   public List<Object[]> getGroundDataYear(int ground_id, int tournament_id,int year);
-   
+
+    public List<Ground> getGround(int id);
+
+    public Ground getGroundDetails(int ground_id);
+
+    public List<Object[]> getGroundData(int ground_id, int tournament_id);
+
+    public List<Object[]> getGroundDataYear(int ground_id, int tournament_id, int year);
 }

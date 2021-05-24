@@ -103,7 +103,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4 text-center animate-box">
-                                    <div class="services column" id="" onclick="">
+                                    <div class="services column" id="" onclick="sendRequestPlayer(${param.tournament_id})">
                                         <img class="img-responsive" src="" alt="">
                                         <figure>
                                            <img src="resources/images/ipl/player.jpg" width="300px" height="300px" alt="Trulli" >
@@ -175,6 +175,9 @@
             }
             function sendRequestGround(tournament_id) {
                 window.location = 'ground?tournament_id=' + tournament_id;
+            }
+            function sendRequestPlayer(tournament_id) {
+                window.location = 'player?tournament_id=' + tournament_id;
             }
         </script>
     </script>
