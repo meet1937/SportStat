@@ -22,6 +22,7 @@ import org.hibernate.Transaction;
  */
 public class PlayerDaoImpl implements PlayerDao {
 
+    @Override
     public List<Player> getPlayerDetail(int player_id, int tournament_id)
     {
         SessionFactory sessionFactory = FactoryProvider.getFactory();
@@ -35,15 +36,10 @@ public class PlayerDaoImpl implements PlayerDao {
         return playerList;
     }
     
+    @Override
     public List<Player> searchPlayerByName(String player_name,int tournament_id)
     {
         System.out.println("hi");
-//           Player p[]=new Player[1];
-//           p[0]=new Player("abc","india","abc","abc","abc","abc",2);
-//           p[0].setPlayer_id(1);
-//          List<Player> ab=new ArrayList<>();
-//          ab.add(p[0]);
-//          return ab;
         System.out.println("hihihihih");
         System.out.println(player_name + tournament_id );
         SessionFactory sessionFactory = FactoryProvider.getFactory();

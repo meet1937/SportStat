@@ -40,9 +40,18 @@ public class PlayerController {
 
         List<Player> playerList = playerDao.searchPlayerByName(player_name, tournament_id);
 //        System.out.println(playerList);
-
+        System.out.println(playerList.size());
 //        String detail = null;
         return playerList;
     }
+    @RequestMapping(value = "/playerDetail")
+    public ModelAndView givePlayerInfo(@RequestParam("player_id") int player_id,@RequestParam("tournament_id") int tournament_id) {
+
+        ModelAndView model = new ModelAndView("PlayerInfo");
+        List<Player> playerList = playerDao.getPlayerDetail(player_id, tournament_id);
+        model.addObject("playerList", playerList);
+        return model;
+    }
+
 
 }
