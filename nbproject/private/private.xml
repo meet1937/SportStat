@@ -3,12 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp64/www/SportStat/web/pages/ground.jsp</file>
-            <file>file:/C:/wamp64/www/SportStat/src/java/daoimplementation/PlayerDaoImpl.java</file>
-            <file>file:/C:/wamp64/www/SportStat/web/pages/player.jsp</file>
             <file>file:/C:/wamp64/www/SportStat/web/pages/Ground_score.jsp</file>
-            <file>file:/C:/wamp64/www/SportStat/src/java/controllers/PlayerController.java</file>
-            <file>file:/C:/wamp64/www/SportStat/src/java/controllers/GroundAdvanceStatsController.java</file>
+            <file>file:/C:/wamp64/www/SportStat/src/java/daoimplementation/MatchesDaoImpl.java</file>
+            <file>file:/C:/wamp64/www/SportStat/src/java/controllers/TeamvsTeamController.java</file>
+            <file>file:/C:/wamp64/www/SportStat/web/pages/TeamVsTeamStats.jsp</file>
+            <file>file:/C:/wamp64/www/SportStat/src/java/daoimplementation/GroundDaoImpl.java</file>
         </group>
     </open-files>
 </project-private>

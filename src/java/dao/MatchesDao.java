@@ -6,6 +6,7 @@
 package dao;
 
 import entities.Matches;
+import entities.Teams;
 import java.util.List;
 
 /**
@@ -14,4 +15,7 @@ import java.util.List;
  */
 public interface MatchesDao {
     public List<Matches> getMatch(int ground_id, int tournament_id );
+    public List<Object[]> getteamVsTeam(int team1, int team2);
+    public List<Teams> getTeamName(int team);
+    
 }

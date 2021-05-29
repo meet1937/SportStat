@@ -1,4 +1,3 @@
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
@@ -54,7 +53,7 @@
         <link rel="stylesheet" href="resources/css/owl.theme.default.min.css">
         <!-- Theme style -->
         <link rel="stylesheet" href="resources/css/style.css">
-        <!--<link rel="stylesheet" href="resources/css/search.css">-->
+        <link rel="stylesheet" href="resources/css/search.css">
         <!-- Modernizr JS -->
         <script src="resources/js/modernizr-2.6.2.min.js"></script>
     </head>
@@ -96,8 +95,8 @@
 
             <header id="fh5co-header" class="fh5co-cover" role="banner" data-stellar-background-ratio="0.5">
                 <form onsubmit="event.preventDefault();" role="search" autocomplete="off">
-                    <!-- <label for="search">Search for stuff</label> -->
-                    <input id="txt-search" onkeyup="getPlayerList()" type="search" placeholder="Search Ground"  />
+
+                    <input id="txt-search" onkeyup="getPlayerList()" type="search" placeholder="Search Player"  />
                 </form>
                 <div id="filter-records"></div>
 
@@ -165,46 +164,54 @@
     <script>
                         function getPlayerList() {
                             var x = document.getElementById("txt-search").value;
-                            if(x=="")
+                            if (x == "")
                             {
                                 $('#filter-records').html(`<p>No player Search/Found</p>`);
-                            }
-                            else
+                            } else
                             {
-                            $.ajax({
-                                type: "GET",
-                                url: "${pageContext.request.contextPath}/getPlayer",
-                                data: {
-                                    "player_name": x,
-                                    "tournament_id": ${param.tournament_id}
-                                },
-                                success: function (data) {
-                                    console.log(data);
-                                    var output = '<div class="row">';
-                                    var count = 1;
-                                    $.each(data, function (key, val) {
-//                                        if ((val.employee_salary.search(regex) != -1) || (val.employee_name.search(regex) != -1)) {
-                                            output += '<div class="col-md-3 well">';
-//                                            output += '<div class="col-md-3"><img class="img-responsive" src="' + val.profile_image + '" alt="' + val.employee_name + '" /></div>';
-                                            output += '<div class="col-md-6">';
-                                            var a = ' <a href=playerDetail?player_id=' + val.player_id +'&tournament_id='+${param.tournament_id} +' ><h5>' + val.player_name + '</h5></a>'
-//                                            console.log(a)
-                                            output += a;
-//                                            output += '<p>' + val.employee_salary + '</p>'
-                                            output += '</div>';
-                                            output += '</div>';
-                                            if (count % 2 == 0) {
-                                                output += '</div><div class="row">'
-                                            }
-                                            count++;
-//                                        }
-                                    });
-                                    output += '</div>';
-                                    $('#filter-records').html(output);
+                                $.ajax({
+                                    type: "GET",
+                                    url: "${pageContext.request.contextPath}/getPlayer",
+                                    data: {
+                                        "player_name": x,
+                                        "tournament_id": ${param.tournament_id}
+                                    },
+                                    success: function (data) {
+                                        console.log(data);
+                                        var output = '<div class="row">';
+                                        var count = 1;
+                                        output += `<table id="table" class="table table-hover  table-dark" style="color: white;margin-left:20px;">`;
+                                        output += `<thead style="color: darkorange; font-size: 20px;">
+                                                    <tr>
+                                                        
+                                                        <th scope="col" >Player</th>
+                                                        <th scope="col" >Country</th>
+                                                        <th scope="col" >Role</th>
+                                                        
+                                                    </tr>
+                                                </thead>  <tbody style="font-size: 20px">`;
+                                        $.each(data, function (key, val) {
+                                            var a = ' <a href=playerDetail?player_id=' + val.player_id + '&tournament_id=' +${param.tournament_id} + ' ><h5>' + val.player_name + '</h5></a>';
+                                            var b = ' <a href=playerDetail?player_id=' + val.player_id + '&tournament_id=' +${param.tournament_id} + ' ><h5>' + val.country + '</h5></a>';
+                                            var c = ' <a href=playerDetail?player_id=' + val.player_id + '&tournament_id=' +${param.tournament_id} + ' ><h5>' + val.role + '</h5></a>';
 
-                                }
-                            });
-                        }
+
+                                            output += `<tr>
+                                                        
+                                                        <th scope="col">` + a + `</th>
+                                                        <th scope="col">` + b + `</th>
+                                                        <th scope="col">` + c + `</th>
+                                                        
+                                                    </tr>`;
+
+
+
+                                        });
+                                        output += `</tbody></table>`;
+                                        $('#filter-records').html(output);
+                                    }
+                                });
+                            }
                         }
     </script>
 </body>
