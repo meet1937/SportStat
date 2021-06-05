@@ -9,12 +9,19 @@
     </head>
     <body>
         <h1>Hello World!</h1>.
-    <c:forEach var="teamList" items="${teamList}" >
-        ${teamList.team_id}---
-        ${teamList.team_name}---
-        ${teamList.tournament_id}---
-        ${teamList.team_image}---
-        <br>
-    </c:forEach>
-</body>
+        <c:forEach var="teamList" items="${teamList}" >
+            <div onclick="getSquadList(${teamList.team_id})">
+                ${teamList.team_id}---
+                ${teamList.team_name}---
+                ${teamList.tournament_id}---
+                ${teamList.team_image}---
+                <br>
+            </div>
+        </c:forEach>
+        <script>
+            function getSquadList(team_id) {
+            window.location = 'squad?team_id=' + team_id +'&tournament_id='+${param.tournament_id} ;
+    }
+        </script>
+    </body>
 </html>

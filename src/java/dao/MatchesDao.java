@@ -17,5 +17,5 @@ public interface MatchesDao {
     public List<Matches> getMatch(int ground_id, int tournament_id );
     public List<Object[]> getteamVsTeam(int team1, int team2);
     public List<Teams> getTeamName(int team);
-    
+    public List<Object[]> getAdvanceTeamData(int team1,int team2,int ground_id,int year,int decide1,int decide2);
 }

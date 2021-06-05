@@ -3,11 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp64/www/SportStat/web/pages/Ground_score.jsp</file>
-            <file>file:/C:/wamp64/www/SportStat/src/java/daoimplementation/MatchesDaoImpl.java</file>
-            <file>file:/C:/wamp64/www/SportStat/src/java/controllers/TeamvsTeamController.java</file>
-            <file>file:/C:/wamp64/www/SportStat/web/pages/TeamVsTeamStats.jsp</file>
-            <file>file:/C:/wamp64/www/SportStat/src/java/daoimplementation/GroundDaoImpl.java</file>
+            <file>file:/C:/wamp64/www/SportStat/src/java/daoimplementation/SquadDaoImpl.java</file>
+            <file>file:/C:/wamp64/www/SportStat/web/pages/Team.jsp</file>
+            <file>file:/C:/wamp64/www/SportStat/web/pages/sports.jsp</file>
+            <file>file:/C:/wamp64/www/SportStat/src/java/entities/Squad.java</file>
+            <file>file:/C:/wamp64/www/SportStat/web/pages/player.jsp</file>
+            <file>file:/C:/wamp64/www/SportStat/src/java/controllers/SquadController.java</file>
+            <file>file:/C:/wamp64/www/SportStat/src/java/entities/Player.java</file>
+            <file>file:/C:/wamp64/www/SportStat/src/java/controllers/PlayerController.java</file>
+            <file>file:/C:/wamp64/www/SportStat/src/java/dao/SquadDao.java</file>
+            <file>file:/C:/wamp64/www/SportStat/web/pages/Squad.jsp</file>
         </group>
     </open-files>
 </project-private>

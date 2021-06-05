@@ -22,6 +22,7 @@
                     <option value="${teamList.team_id}">${teamList.team_name}</option>
                 </c:forEach>
             </select>
+            <input name="tournament_id" value="${param.tournament_id}" type="hidden"/>
             <input id="btn" type="submit"/>
         </form>
         <script>

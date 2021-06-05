@@ -17,5 +17,6 @@
         <mapping class="entities.Ground"/>
         <mapping class="entities.Matches"/>
         <mapping class="entities.Player"/>
+        <mapping class="entities.Squad"/>
     </session-factory>
 </hibernate-configuration>

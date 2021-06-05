@@ -167,7 +167,8 @@
                             if (x == "")
                             {
                                 $('#filter-records').html(`<p>No player Search/Found</p>`);
-                            } else
+                            } 
+                            else
                             {
                                 $.ajax({
                                     type: "GET",

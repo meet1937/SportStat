@@ -45,5 +45,6 @@
     <bean id="groundDao" class="daoimplementation.GroundDaoImpl" />  
     <bean id="matchesDao" class="daoimplementation.MatchesDaoImpl" /> 
     <bean id="playerDao" class="daoimplementation.PlayerDaoImpl" /> 
+    <bean id="squadDao" class="daoimplementation.SquadDaoImpl" /> 
          
 </beans>
