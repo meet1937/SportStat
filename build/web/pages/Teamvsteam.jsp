@@ -40,11 +40,12 @@
         <!-- Theme style -->
         <!-- Modernizr JS -->
         <script src="${pageContext.request.contextPath}/resources/js/modernizr-2.6.2.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <link href="${pageContext.request.contextPath}/resources/css/style.css" rel="stylesheet">
         <link href="${pageContext.request.contextPath}/resources/css/team.css" rel="stylesheet">
 
     </head>
-    <body>
+    <body onload="onLoadFunc()">
         <div class="fh5co-loader"></div>
         <div id="page">
             <nav class="fh5co-nav" role="navigation">
@@ -74,7 +75,7 @@
                     </div>
                 </div>
             </nav>
-
+            
 
             <form action="teamvsteamstats">
                 <section class="select-option">
@@ -92,7 +93,7 @@
                     </div>
                     <div class="dropdown dropdown-dark">
                         <select name="team2" id="team2" onchange="myFunction()" class="dropdown-select">.
-                            <option value="op1" disabled selected>Select team2</option>
+                            <option value="op2" disabled selected>Select team2</option>
                             <c:forEach var="teamList" items="${teamList}" >
                                 <option value="${teamList.team_id}">${teamList.team_name}</option>
                             </c:forEach>
@@ -104,7 +105,7 @@
                     </div>
                 </section>
             </form>
-                    
+
             <footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(${pageContext.request.contextPath}/resources/images/img_bg_1.jpg);" role="contentinfo">
                 <div class="overlay"></div>
                 <div class="container">
@@ -143,21 +144,36 @@
             </div>
             <script>
                 function myFunction() {
-                    console.log("gandhi chutiyo");
                     var drop1 = document.getElementById('team1').value;
                     var drop2 = document.getElementById('team2').value;
+                    console.log(drop1)
+                    console.log(drop2)
                     if (drop1 == drop2)
                     {
-                        //            document.getElementById("btn").disabled = true;
+                        document.getElementById("btn").disabled = true;
                         swal({
                             icon: 'error',
                             title: 'Oops...',
                             text: 'Same Team!',
                             footer: '<span>Select different teams</span>'
                         })
-                    } else
+                    }
+                    else if(drop1=='op1' || drop2=='op2')
                     {
-                        //            document.getElementById("btn").disabled = false;
+                        document.getElementById("btn").disabled = true;
+                    }
+                    else
+                    {
+                        document.getElementById("btn").disabled = false;
+                    }
+                }
+                function onLoadFunc()
+                {
+                    var drop1 = document.getElementById('team1').value;
+                    var drop2 = document.getElementById('team2').value;
+                    if(drop1=='op1' || drop2=='op2')
+                    {
+                        document.getElementById("btn").disabled = true;
                     }
                 }
             </script>

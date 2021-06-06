@@ -85,7 +85,7 @@
                                     <div class="services column" id="${teamList.team_id}" onclick="getSquadList(${teamList.team_id})">
                                         <img class="img-responsive" src="" alt="">
                                         <figure>
-                                            <img src="${pageContext.request.contextPath}/${sportList.sports_image}" width="300px" height="300px" alt="Trulli" ">
+                                            <img src="${pageContext.request.contextPath}/${teamList.team_image}" width="300px" height="300px" alt="Trulli" ">
                                         </figure>
                                         <h2 style="color:whitesmoke">${teamList.team_name}</h2>
                                     </div>

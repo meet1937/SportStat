@@ -56,6 +56,17 @@
         <link rel="stylesheet" href="resources/css/search.css">
         <!-- Modernizr JS -->
         <script src="resources/js/modernizr-2.6.2.min.js"></script>
+        <style>
+            .sports {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .sports year {
+                width: 15%;
+            }
+        </style>
     </head>
 
     <body>
@@ -91,23 +102,26 @@
                 </div>
             </nav>
             <header id="fh5co-header" class="fh5co-cover" role="banner" data-stellar-background-ratio="0.5">
-                <select name="year" id="year" onchange="getgrounddata()">
-                    <option value="All">All</option>
-                    <option value="2021">2021</option>
-                    <option value="2020">2020</option>
-                    <option value="2019">2019</option>
-                    <option value="2018">2018</option>
-                    <option value="2017">2017</option>
-                    <option value="2016">2016</option>
-                    <option value="2015">2015</option>
-                    <option value="2014">2014</option>
-                    <option value="2013">2013</option>
-                    <option value="2012">2012</option>
-                    <option value="2011">2011</option>
-                    <option value="2010">2010</option>
-                    <option value="2009">2009</option>
-                    <option value="2008">2008</option>
-                </select>    
+                <div class="sports">
+                    <select class="sport" name="year" id="year" onchange="getgrounddata()">
+                        <option value="All">All</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                    </select>
+                </div>
+
                 <div class="table-responsive" style="margin-top: 60px;">
                     <table class="table table-hover table-striped table-dark"
                            style="color: white; margin: auto;margin-top: 20px;">
@@ -221,37 +235,37 @@
         <!-- Main -->
         <script src="resources/js/main.js"></script>
         <script>
-                    function getgrounddata() {
-                        var x = document.getElementById("year").value;
-                        console.log(x);
-                        $.ajax({
-                            type: "GET",
-                            url: "${pageContext.request.contextPath}/check",
-                            data: {
-                                "ground_id": ${param.ground_id},
-                                "tournament_id": ${param.tournament_id},
-                                "year": x
-                            },
-                            success: function (data) {
-                                console.log(data);
-                                printdata(data);
-                            }
-                        });
-                    }
-                    function printdata(data) {
-                        console.log(data);
-                        var obj = JSON.parse(data);
+                        function getgrounddata() {
+                            var x = document.getElementById("year").value;
+                            console.log(x);
+                            $.ajax({
+                                type: "GET",
+                                url: "${pageContext.request.contextPath}/check",
+                                data: {
+                                    "ground_id": ${param.ground_id},
+                                    "tournament_id": ${param.tournament_id},
+                                    "year": x
+                                },
+                                success: function (data) {
+                                    console.log(data);
+                                    printdata(data);
+                                }
+                            });
+                        }
+                        function printdata(data) {
+                            console.log(data);
+                            var obj = JSON.parse(data);
 //                document.getElementById("foreach1").innerHtml=``;
-                        $('#td1').html(obj[0][0]);
-                        $('#td2').html(obj[0][1]);
-                        $('#td3').html(obj[0][2]);
-                        $('#td4').html(obj[0][3]);
-                        $('#td5').html(obj[0][4]);
-                        $('#td6').html(obj[0][5]);
-                        $('#td7').html(obj[0][6]);
-                        $('#td8').html(obj[0][7]);
-                        $('#td9').html(obj[0][0]-obj[0][7]);
-                    }
+                            $('#td1').html(obj[0][0]);
+                            $('#td2').html(obj[0][1]);
+                            $('#td3').html(obj[0][2]);
+                            $('#td4').html(obj[0][3]);
+                            $('#td5').html(obj[0][4]);
+                            $('#td6').html(obj[0][5]);
+                            $('#td7').html(obj[0][6]);
+                            $('#td8').html(obj[0][7]);
+                            $('#td9').html(obj[0][0] - obj[0][7]);
+                        }
 
 
         </script>

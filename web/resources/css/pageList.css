@@ -22,7 +22,10 @@ body{
     border: 0 solid rgba(0,0,0,.125);
     border-radius: .25rem;
 }
-
+.fade
+{
+    opacity:100;
+}
 .card-body {
     flex: 1 1 auto;
     min-height: 1px;
@@ -59,7 +62,7 @@ body{
 }
 
 #customers td, #customers th {
-    border: 1px solid #ddd;
+    border: 1px solid #ddd !important;
     padding: 8px;
 }
 
@@ -87,10 +90,10 @@ body{
     color: #eee;
 }
 .project-tab #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: #0062cc;
+    color: white;
     background-color: transparent;
     border-color: transparent transparent #f3f3f3;
-    border-bottom: 3px solid !important;
+    border-bottom: 3px solid transparent;
     font-size: 16px;
     font-weight: bold;
 }
@@ -98,7 +101,7 @@ body{
     border: 1px solid transparent;
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
-    color: #0062cc;
+    color: white;
     font-size: 16px;
     font-weight: 600;
 }
@@ -106,11 +109,16 @@ body{
     border: none;
 }
 .project-tab thead{
-    background: #f3f3f3;
-    color: #333;
+    background: darkblue;
+    color: white;
 }
 .project-tab a{
     text-decoration: none;
     color: #333;
     font-weight: 600;
+}
+h1 , h2 , h3 , h4 , h5 , h6{
+    color:orange ;
+    font-size: 16px;
+    font-weight: bold;
 }

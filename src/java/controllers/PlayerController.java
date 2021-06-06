@@ -5,8 +5,9 @@
  */
 package controllers;
 
-import dao.PlayerDao;
+import daoimplementation.BatCareerDaoImpl;
 import daoimplementation.PlayerDaoImpl;
+import entities.BatCareer;
 import entities.Player;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,9 @@ public class PlayerController {
     @Autowired
     PlayerDaoImpl playerDao;
 
+    @Autowired
+    BatCareerDaoImpl batCareer;
+
     @RequestMapping(value = "/player")
     public ModelAndView giveTournamentContent(@RequestParam("tournament_id") String tournament_id) {
 
@@ -37,21 +41,21 @@ public class PlayerController {
     @RequestMapping(value = "/getPlayer")
     @ResponseBody
     public List<Player> giveAdvance(@RequestParam("player_name") String player_name, @RequestParam("tournament_id") int tournament_id) {
-
         List<Player> playerList = playerDao.searchPlayerByName(player_name, tournament_id);
-//        System.out.println(playerList);
         System.out.println(playerList.size());
-//        String detail = null;
         return playerList;
     }
+
     @RequestMapping(value = "/playerDetail")
-    public ModelAndView givePlayerInfo(@RequestParam("player_id") int player_id,@RequestParam("tournament_id") int tournament_id) {
+    public ModelAndView givePlayerInfo(@RequestParam("player_id") int player_id, @RequestParam("tournament_id") int tournament_id) {
 
         ModelAndView model = new ModelAndView("PlayerInfo");
         List<Player> playerList = playerDao.getPlayerDetail(player_id, tournament_id);
+        List<BatCareer> batCareerList = batCareer.getBatCareerStats(player_id, tournament_id);
         model.addObject("playerList", playerList);
+        model.addObject("batCareerList", batCareerList);
+        System.out.println(batCareerList);
         return model;
     }
-
 
 }
