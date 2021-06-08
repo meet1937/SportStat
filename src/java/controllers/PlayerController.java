@@ -5,10 +5,18 @@
  */
 package controllers;
 
+import daoimplementation.AdvBatCareerDaoImpl;
+import daoimplementation.AdvBowlCareerDaoImpl;
 import daoimplementation.BatCareerDaoImpl;
+import daoimplementation.BowlCareerDaoImpl;
+import daoimplementation.GroundDaoImpl;
 import daoimplementation.PlayerDaoImpl;
+import daoimplementation.TeamDaoImpl;
 import entities.BatCareer;
+import entities.BowlCareer;
+import entities.Ground;
 import entities.Player;
+import entities.Teams;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -29,6 +37,21 @@ public class PlayerController {
 
     @Autowired
     BatCareerDaoImpl batCareer;
+
+    @Autowired
+    GroundDaoImpl groundDao;
+
+    @Autowired
+    TeamDaoImpl teamDao;
+
+    @Autowired
+    AdvBatCareerDaoImpl advBatCareerDao;
+    
+    @Autowired
+    BowlCareerDaoImpl bowlCareer;
+    
+    @Autowired
+    AdvBowlCareerDaoImpl advBowlCareerDao;
 
     @RequestMapping(value = "/player")
     public ModelAndView giveTournamentContent(@RequestParam("tournament_id") String tournament_id) {
@@ -52,10 +75,32 @@ public class PlayerController {
         ModelAndView model = new ModelAndView("PlayerInfo");
         List<Player> playerList = playerDao.getPlayerDetail(player_id, tournament_id);
         List<BatCareer> batCareerList = batCareer.getBatCareerStats(player_id, tournament_id);
+        List<Teams> teamList = teamDao.getTeam(tournament_id);
+        List<Ground> groundName = groundDao.getGround(tournament_id);
+        List<BowlCareer> bowlCareerList = bowlCareer.getBowlCareerStats(player_id, tournament_id);
+        model.addObject("groundName", groundName);
         model.addObject("playerList", playerList);
         model.addObject("batCareerList", batCareerList);
+        model.addObject("bowlCareerList", bowlCareerList);
+        model.addObject("teamList", teamList);
         System.out.println(batCareerList);
         return model;
     }
 
+    @RequestMapping(value = "/getAdvBatStats")
+    @ResponseBody
+    public List<Object[]> getAdvBatStats(@RequestParam("player_id") int player_id, @RequestParam("tournament_id") int tournament_id, @RequestParam("year") String year, @RequestParam("team") String team, @RequestParam("ground") String ground) {
+        List<Object[]> getAdvBatStatsList = advBatCareerDao.getAdvBatStats(player_id, tournament_id, year, team, ground);
+        System.out.println(getAdvBatStatsList);
+        return getAdvBatStatsList;
+    }
+    
+    @RequestMapping(value = "/getAdvBowlStats")
+    @ResponseBody
+    public List<Object[]> getAdvBowlStats(@RequestParam("player_id") int player_id, @RequestParam("tournament_id") int tournament_id, @RequestParam("year") String year, @RequestParam("team") String team, @RequestParam("ground") String ground) {
+        List<Object[]> getAdvBowlStatsList = advBowlCareerDao.getAdvBowlStats(player_id, tournament_id, year, team, ground);
+        System.out.println("hello");
+        System.out.println(getAdvBowlStatsList);
+        return getAdvBowlStatsList;
+    }
 }

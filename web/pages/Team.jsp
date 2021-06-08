@@ -53,15 +53,15 @@
                         <div class="row">
                             <div class="col-xs-2">
                                 <div id="fh5co-logo">
-                                    <a href=""  >StatSports<span>.</span></a>
+                                    <a href="./"  >StatSports<span>.</span></a>
                                 </div>
                             </div>
                             <div class="col-xs-10 text-right menu-1">
                                 <ul>
                                     <li class="active">
-                                        <a href="" >Home</a>
+                                        <a href="./" >Home</a>
                                     </li>
-                                    </li>
+
                                     <li class="active">
                                         <a href="../SportStat/contactus"  >Contact us</a>
                                     </li>
@@ -81,7 +81,6 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-4 text-center animate-box">
-
                                     <div class="services column" id="${teamList.team_id}" onclick="getSquadList(${teamList.team_id})">
                                         <img class="img-responsive" src="" alt="">
                                         <figure>

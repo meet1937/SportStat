@@ -49,15 +49,15 @@
                         <div class="row">
                             <div class="col-xs-2">
                                 <div id="fh5co-logo">
-                                    <a href=""  >StatSports<span>.</span></a>
+                                    <a href="./"  >StatSports<span>.</span></a>
                                 </div>
                             </div>
                             <div class="col-xs-10 text-right menu-1">
                                 <ul>
                                     <li class="active">
-                                        <a href="" >Home</a>
+                                        <a href="./" >Home</a>
                                     </li>
-                                    </li>
+
                                     <li class="active">
                                         <a href="../SportStat/contactus"  >Contact us</a>
                                     </li>
@@ -161,7 +161,8 @@
                                 <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                                     <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">BATTING STATS</a>
                                     <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">BOWLING STATS</a>
-                                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">ADVANCED IPL STATS</a>
+                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">ADVANCED IPL BAT STATS</a>
+                                    <a class="nav-item nav-link" id="nav-bowling" data-toggle="tab" href="#nav-advbowling" role="tab" aria-controls="nav-advbowling" aria-selected="false">ADVANCED IPL BOWL STATS</a>
                                 </div>
                             </nav>
                             <div class="tab-content" id="nav-tabContent">
@@ -174,109 +175,218 @@
                                             <th>Stats</th>
                                         </tr>
                                         <c:forEach var="batCareerList" items="${batCareerList}">
-                                        <tr>
-                                            <td>Matches</td>
-                                            <td>${batCareerList.matches}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Innings</td>
-                                            <td>${batCareerList.innings}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Not Out</td>
-                                            <td>${batCareerList.no}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Runs</td>
-                                            <td>${batCareerList.runs}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>HIghest Score</td>
-                                            <td>${batCareerList.highest_score}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Strike Rate</td>
-                                            <td>${batCareerList.sr}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Average</td>
-                                            <td>0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>100</td>
-                                            <td>${batCareerList.hundred}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>200</td>
-                                            <td>${batCareerList.two_hundred}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>50</td>
-                                            <td>${batCareerList.fifty}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>${batCareerList.four}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>${batCareerList.six}</td>
-                                        </tr>
+                                            <tr>
+                                                <td>Matches</td>
+                                                <td>${batCareerList.matches}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Innings</td>
+                                                <td>${batCareerList.innings}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Not Out</td>
+                                                <td>${batCareerList.no}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Runs</td>
+                                                <td>${batCareerList.runs}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>HIghest Score</td>
+                                                <td>${batCareerList.highest_score}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Strike Rate</td>
+                                                <td>${batCareerList.sr}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Average</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>100</td>
+                                                <td>${batCareerList.hundred}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>200</td>
+                                                <td>${batCareerList.two_hundred}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>50</td>
+                                                <td>${batCareerList.fifty}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>${batCareerList.four}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>${batCareerList.six}</td>
+                                            </tr>
                                         </c:forEach>
                                     </table>
                                 </div>
                                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                    <table class="table" cellspacing="0" style="background-color:#f2f2f2;">
+                                    <table class="table" id="customers" cellspacing="0" style="background-color:lightgrey;">
                                         <thead>
                                             <tr>
-                                                <th>Project Name</th>
-                                                <th>Employer</th>
-                                                <th>Time</th>
+                                                <th>Stat Name</th>
+                                                <th>Stats</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td><a href="#">Work 1</a></td>
-                                                <td>Doe</td>
-                                                <td>john@example.com</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#">Work 2</a></td>
-                                                <td>Moe</td>
-                                                <td>mary@example.com</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#">Work 3</a></td>
-                                                <td>Dooley</td>
-                                                <td>july@example.com</td>
-                                            </tr>
+                                            <c:forEach var="bowlCareerList" items="${bowlCareerList}">
+                                                <tr>
+                                                    <td>Matches</td>
+                                                    <td>${bowlCareerList.matches}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Innings</td>
+                                                    <td>${bowlCareerList.innings}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Balls</td>
+                                                    <td>${bowlCareerList.balls}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Runs</td>
+                                                    <td>${bowlCareerList.runs}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Wickets</td>
+                                                    <td>${bowlCareerList.wkts}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Economy</td>
+                                                    <td>${(bowlCareerList.runs/((bowlCareerList.balls/6)+bowlCareerList.balls%6))}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Best Bowling Inning</td>
+                                                    <td>${bowlCareerList.bbi_wkts}-${bowlCareerList.bbi_runs}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Best Bowling Match</td>
+                                                    <td>${bowlCareerList.bbm_wkts}-${bowlCareerList.bbm_runs}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Average</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Strike Rate</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5 Wkts</td>
+                                                    <td>${bowlCareerList.fivewkts}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10 Wkts</td>
+                                                    <td>${bowlCareerList.tenwkts}</td>
+                                                </tr>
+                                            </c:forEach>
                                         </tbody>
                                     </table>
                                 </div>
                                 <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                    <table class="table" cellspacing="0"  id="advBatStatPopulate">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <select class="sport" name="year" id="year" onchange="getAdvBatPlayerStats()" style="color:black">
+                                                        <option value="All" >Select Year</option>
+                                                        <option value="2021">2021</option>
+                                                        <option value="2020">2020</option>
+                                                        <option value="2019">2019</option>
+                                                        <option value="2018">2018</option>
+                                                        <option value="2017">2017</option>
+                                                        <option value="2016">2016</option>
+                                                        <option value="2015">2015</option>
+                                                        <option value="2014">2014</option>
+                                                        <option value="2013">2013</option>
+                                                        <option value="2012">2012</option>
+                                                        <option value="2011">2011</option>
+                                                        <option value="2010">2010</option>
+                                                        <option value="2009">2009</option>
+                                                        <option value="2008">2008</option>
+                                                    </select>
+                                                </th>
+                                                <th>
+                                                    <select name="groundName" id="ground" onchange="getAdvBatPlayerStats()" style="color:black">
+                                                        <option value="All"  >Select Ground</option>
+                                                        <c:forEach var="groundName" items="${groundName}" >
+                                                            <option value="${groundName.ground_id}">${groundName.ground_name}</option>
+                                                        </c:forEach>
+                                                    </select>
+                                                </th>
+                                                <th>
+                                                    <select name="teamList" id="team" onchange="getAdvBatPlayerStats()" style="color:black">
+                                                        <option value="All" >Select Team</option>
+                                                        <c:forEach var="teamList" items="${teamList}" >
+                                                            <option value="${teamList.team_id}">${teamList.team_name}</option>
+                                                        </c:forEach> 
+                                                    </select>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody >
+                                            <!--                                        <div id="advBatStatPopulate">
+                                            
+                                                                                    </div>-->
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+
+                                <div class="tab-pane fade" id="nav-advbowling" role="tabpanel" aria-labelledby="nav-bowling">
                                     <table class="table" cellspacing="0">
                                         <thead>
                                             <tr>
-                                                <th>Contest Name</th>
-                                                <th>Date</th>
-                                                <th>Award Position</th>
+                                                <th>
+                                                    <select class="sport" name="year1" id="year1" onchange="getAdvBowlPlayerStats()" style="color:black">
+                                                        <option value="All" >Select Year</option>
+                                                        <option value="2021">2021</option>
+                                                        <option value="2020">2020</option>
+                                                        <option value="2019">2019</option>
+                                                        <option value="2018">2018</option>
+                                                        <option value="2017">2017</option>
+                                                        <option value="2016">2016</option>
+                                                        <option value="2015">2015</option>
+                                                        <option value="2014">2014</option>
+                                                        <option value="2013">2013</option>
+                                                        <option value="2012">2012</option>
+                                                        <option value="2011">2011</option>
+                                                        <option value="2010">2010</option>
+                                                        <option value="2009">2009</option>
+                                                        <option value="2008">2008</option>
+                                                    </select>
+                                                </th>
+                                                <th>
+                                                    <select name="groundName" id="ground1" onchange="getAdvBowlPlayerStats()" style="color:black">
+                                                        <option value="All"  >Select Ground</option>
+                                                        <c:forEach var="groundName" items="${groundName}" >
+                                                            <option value="${groundName.ground_id}">${groundName.ground_name}</option>
+                                                        </c:forEach>
+                                                    </select>
+                                                </th>
+                                                <th>
+                                                    <select name="teamList" id="team1" onchange="getAdvBowlPlayerStats()" style="color:black">
+                                                        <option value="All" >Select Team</option>
+                                                        <c:forEach var="teamList" items="${teamList}" >
+                                                            <option value="${teamList.team_id}">${teamList.team_name}</option>
+                                                        </c:forEach> 
+                                                    </select>
+                                                </th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td><a href="#">Work 1</a></td>
-                                                <td>Doe</td>
-                                                <td>john@example.com</td>
+                                            <tr >
+                                                <td>
+                                                </td>
                                             </tr>
-                                            <tr>
-                                                <td><a href="#">Work 2</a></td>
-                                                <td>Moe</td>
-                                                <td>mary@example.com</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#">Work 3</a></td>
-                                                <td>Dooley</td>
-                                                <td>july@example.com</td>
+                                            <tr id="populate_here">
+
                                             </tr>
                                         </tbody>
                                     </table>
@@ -330,6 +440,53 @@
 
         </script>
     </c:forEach>
+    <script>
+        function getAdvBatPlayerStats() {
+            var year = document.getElementById('year').value;
+            var ground = document.getElementById('ground').value;
+            var team = document.getElementById('team').value;
+
+            $.ajax({
+                type: "GET",
+                url: "${pageContext.request.contextPath}/getAdvBatStats",
+                data: {
+                    "player_id": ${param.player_id},
+                    "tournament_id": ${param.tournament_id},
+                    "year": year,
+                    "team": team,
+                    "ground": ground
+                },
+                success: function (data) {
+                    console.log(data);
+//                    $('#advBatStatPopulate').html( `'<tr> <td>'+data[0][0]+'</td> <td>'+data[0][0]+'</td> </tr>'`);
+                    $.each(data, function (key, val) {
+                        insertrow(val);
+                    }
+                    
+                }
+            });
+        }
+        function getAdvBowlPlayerStats() {
+            var year = document.getElementById('year1').value;
+            var ground = document.getElementById('ground1').value;
+            var team = document.getElementById('team1').value;
+
+            $.ajax({
+                type: "GET",
+                url: "${pageContext.request.contextPath}/getAdvBowlStats",
+                data: {
+                    "player_id": ${param.player_id},
+                    "tournament_id": ${param.tournament_id},
+                    "year": year,
+                    "team": team,
+                    "ground": ground
+                },
+                success: function (data) {
+                    console.log(data)
+                }
+            });
+        }
+    </script>
 </script>
 <!-- jQuery -->
 <script src="${pageContext.request.contextPath}/resources/js/jquery.min.js"></script>

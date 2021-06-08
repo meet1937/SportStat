@@ -13,5 +13,5 @@ import java.util.List;
  * @author MEET
  */
 public interface TeamDao {
-    public List<Teams> getTeam(int id );
+    public List<Teams> getTeam(int tournament_id );
 }

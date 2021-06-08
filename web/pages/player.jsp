@@ -67,22 +67,20 @@
                         <div class="row">
                             <div class="col-xs-2">
                                 <div id="fh5co-logo">
-                                    <a href="../SportStat/">StatSports<span>.</span></a>
+                                    <a href="./"  >StatSports<span>.</span></a>
                                 </div>
                             </div>
                             <div class="col-xs-10 text-right menu-1">
                                 <ul>
                                     <li class="active">
-                                        <a href="../SportStat/">Home</a>
+                                        <a href="./" >Home</a>
                                     </li>
-
-                                    </li>
-
+                                    
                                     <li class="active">
-                                        <a href="../SportStat/contactus">Contact us</a>
+                                        <a href="../SportStat/contactus"  >Contact us</a>
                                     </li>
                                     <li class="active">
-                                        <a href="../SportStat/aboutus">About us</a>
+                                        <a href="../SportStat/aboutus"  >About us</a>
                                     </li>
                                 </ul>
                             </div>

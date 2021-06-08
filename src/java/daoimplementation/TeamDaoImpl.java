@@ -20,12 +20,12 @@ import org.hibernate.SessionFactory;
  */
 public class TeamDaoImpl implements TeamDao {
     @Override
-    public List<Teams> getTeam(int id ){
-        String hql = "from Teams WHERE tournament_id=:id";
+    public List<Teams> getTeam(int tournament_id ){
+        String hql = "from Teams WHERE tournament_id=:tournament_id";
         SessionFactory sessionFactory = FactoryProvider.getFactory();
         Session session = sessionFactory.openSession();
         Query query = session.createQuery(hql);
-        query.setParameter("id",id);
+        query.setParameter("tournament_id",tournament_id);
         List<Teams> teamList = query.list();
         return teamList;
     }

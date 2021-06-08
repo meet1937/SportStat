@@ -47,5 +47,8 @@
     <bean id="playerDao" class="daoimplementation.PlayerDaoImpl" /> 
     <bean id="squadDao" class="daoimplementation.SquadDaoImpl" /> 
     <bean id="batCareerDao" class="daoimplementation.BatCareerDaoImpl" /> 
+    <bean id="advBatCareerDao" class="daoimplementation.AdvBatCareerDaoImpl" /> 
+    <bean id="bowlCareerDao" class="daoimplementation.BowlCareerDaoImpl" /> 
+    <bean id="advBowlCareerDao" class="daoimplementation.AdvBowlCareerDaoImpl" /> 
          
 </beans>

@@ -19,5 +19,9 @@
         <mapping class="entities.Player"/>
         <mapping class="entities.Squad"/>
         <mapping class="entities.BatCareer"/>
+        <mapping class="entities.AdvBatCareer"/>
+        <mapping class="entities.BowlCareer"/>
+        <mapping class="entities.AdvBowlCareer"/>
+
     </session-factory>
 </hibernate-configuration>
