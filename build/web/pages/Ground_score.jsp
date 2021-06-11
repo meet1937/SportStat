@@ -132,7 +132,6 @@
                         </thead>
                         <tbody>
                             <c:forEach var="GroundDataList" items="${GroundDataList}">
-
                                 <tr>
                                     <td>Total Match Played</td>
                                     <td id="td1">${GroundDataList[0]}</td>
@@ -253,7 +252,6 @@
                         function printdata(data) {
                             console.log(data);
                             var obj = JSON.parse(data);
-//                document.getElementById("foreach1").innerHtml=``;
                             $('#td1').html(obj[0][0]);
                             $('#td2').html(obj[0][1]);
                             $('#td3').html(obj[0][2]);

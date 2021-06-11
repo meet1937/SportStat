@@ -6,18 +6,20 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body {
+/* body {
   background-image: url('https://wallpapercave.com/wp/wp3972164.jpg');
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
  
-}
+} */
 
 .container1{
   
   width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -184,14 +186,14 @@ svg circle:nth-child(2) {
 .text1{
   position: relative;
   color: white;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-weight: bolder;
   font-size: 25px;
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: 0.5s;
-  padding-left : 80px;
-  padding-right: 80px;
+  padding-left : 50px;
+  padding-right: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
   /*border: 2px solid black;*/

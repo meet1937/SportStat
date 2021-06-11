@@ -75,7 +75,7 @@
                                     <li class="active">
                                         <a href="./" >Home</a>
                                     </li>
-                                    
+
                                     <li class="active">
                                         <a href="../SportStat/contactus"  >Contact us</a>
                                     </li>
@@ -165,8 +165,7 @@
                             if (x == "")
                             {
                                 $('#filter-records').html(`<p>No player Search/Found</p>`);
-                            } 
-                            else
+                            } else
                             {
                                 $.ajax({
                                     type: "GET",

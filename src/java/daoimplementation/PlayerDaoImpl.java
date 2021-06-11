@@ -39,8 +39,6 @@ public class PlayerDaoImpl implements PlayerDao {
     @Override
     public List<Player> searchPlayerByName(String player_name,int tournament_id)
     {
-        System.out.println("hi");
-        System.out.println("hihihihih");
         System.out.println(player_name + tournament_id );
         SessionFactory sessionFactory = FactoryProvider.getFactory();
         String hql = "from Player WHERE tournament_id=? AND player_name like ? ";

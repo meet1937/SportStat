@@ -289,7 +289,7 @@
                                     </table>
                                 </div>
                                 <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                                    <table class="table" cellspacing="0"  id="advBatStatPopulate">
+                                    <table class="table" cellspacing="0"  >
                                         <thead>
                                             <tr>
                                                 <th>
@@ -329,10 +329,8 @@
                                                 </th>
                                             </tr>
                                         </thead>
-                                        <tbody >
-                                            <!--                                        <div id="advBatStatPopulate">
-                                            
-                                                                                    </div>-->
+                                        <tbody id="advBatStatPopulate">
+
                                         </tbody>
                                     </table>
                                 </div>
@@ -380,14 +378,8 @@
                                                 </th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <tr >
-                                                <td>
-                                                </td>
-                                            </tr>
-                                            <tr id="populate_here">
+                                        <tbody id="advBowlStatPopulate">
 
-                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -458,11 +450,42 @@
                 },
                 success: function (data) {
                     console.log(data);
-//                    $('#advBatStatPopulate').html( `'<tr> <td>'+data[0][0]+'</td> <td>'+data[0][0]+'</td> </tr>'`);
+                    var output = '';
+                    output += `<tr style="color: darkorange; font-size: 20px;">
+                                    <th scope="col" >Stat Name</th>
+                                    <th scope="col" >Stat</th>
+                                </tr>`;
+                    var runs = 0, balls = 0, four = 0, six = 0, fifty = 0, century = 0, twohundred = 0, avg = 0, sr = 0, out = 0;
                     $.each(data, function (key, val) {
-                        insertrow(val);
-                    }
-                    
+                        if (val.runs >= 200)
+                            twohundred++;
+                        else if (val.runs >= 100)
+                            century++;
+                        else if (val.runs >= 50)
+                            fifty++;
+                        runs += val.runs;
+                        balls += val.balls;
+                        four += val.four;
+                        six += val.six;
+                        if (val.not_out == 0)
+                            out++;
+                    });
+                    var avgf = '--';
+                    if (out != 0)
+                        avgf = (String)(runs / out);
+                    sr = (runs / balls) * 100;
+                    output += '<tr style="color:white"><td>' + "Innings" + '</td><td>' + data.length + '</td></tr>';
+                    output += '<tr style="color:white"><td>' + "runs" + '</td><td>' + runs + '</td></tr>';
+                    output += '<tr style="color:white"><td>' + "balls" + '</td><td>' + balls + '</td></tr>';
+                    output += '<tr style="color:white"><td>' + "four" + '</td><td>' + four + '</td></tr>';
+                    output += '<tr style="color:white"><td>' + "six" + '</td><td>' + six + '</td></tr>';
+                    output += '<tr style="color:white"><td>' + "50" + '</td><td>' + fifty + '</td></tr>';
+                    output += '<tr style="color:white"><td>' + "100" + '</td><td>' + century + '</td></tr>';
+                    output += '<tr style="color:white"><td>' + "200" + '</td><td>' + twohundred + '</td></tr>';
+                    output += '<tr style="color:white"><td>' + "Average" + '</td><td>' + avgf + '</td></tr>';
+                    output += '<tr style="color:white"><td>' + "SR" + '</td><td>' + sr + '</td></tr>';
+                    output += '<tr style="color:white"><td>' + "out" + '</td><td>' + out + '</td></tr>';
+                    $('#advBatStatPopulate').html(output);
                 }
             });
         }
@@ -482,7 +505,49 @@
                     "ground": ground
                 },
                 success: function (data) {
-                    console.log(data)
+                    console.log(data);
+                    var output = '';
+                    output += `<tr style="color: darkorange; font-size: 20px;">
+                                    <th scope="col" >Stat Name</th>
+                                    <th scope="col" >Stat</th>
+                                </tr>`;
+                    var runs = 0, balls = 0, wkts = 0, economy = 0, sr = 0, avg = 0, three = 0, five = 0;
+                    var max_wkts = 0, max_runs = 0;
+                    $.each(data, function (key, val) {
+                        if (val.wkts >= 5)
+                            five++;
+                        else if (val.wkts >= 3)
+                            three++;
+
+                        runs += val.runs;
+                        balls += val.balls;
+                        wkts += val.wkts;
+                        if (max_wkts < wkts) {
+                            max_wkts = Math.max(max_wkts, wkts);
+                            max_runs = runs;
+                        }
+                        else if(max_wkts == wkts)
+                        {
+                            max_runs = runs;
+                        }
+                    });
+                    var avgf = '--';
+                    var srf = '--';
+                    if (wkts != 0){
+                        avgf = (String) (runs / wkts);
+                        srf = (String) (balls / wkts);
+                    }
+                    economy = (runs / (balls / 6 + balls % 6 / 10));
+                    output += '<tr style="color:white"><td>' + "Innings" + '</td><td>' + data.length + '</td></tr>';
+                    output += '<tr style="color:white"><td>' + "runs" + '</td><td>' + runs + '</td></tr>';
+                    output += '<tr style="color:white"><td>' + "balls" + '</td><td>' + balls + '</td></tr>';
+                    output += '<tr style="color:white"><td>' + "wkts" + '</td><td>' + wkts + '</td></tr>';
+                    output += '<tr style="color:white"><td>' + "economy" + '</td><td>' + economy + '</td></tr>';
+                    output += '<tr style="color:white"><td>' + "Average" + '</td><td>' + avgf + '</td></tr>';
+                    output += '<tr style="color:white"><td>' + "SR" + '</td><td>' + srf + '</td></tr>';
+                    output += '<tr style="color:white"><td>' + "Best Figure Innings" + '</td><td>' + max_wkts+'-'+max_runs + '</td></tr>';
+                    output += '<tr style="color:white"><td>' + "Best Figure Match" + '</td><td>' + max_wkts+'-'+max_runs + '</td></tr>';
+                    $('#advBowlStatPopulate').html(output);
                 }
             });
         }

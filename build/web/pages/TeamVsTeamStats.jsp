@@ -29,7 +29,6 @@
         <link  href="${pageContext.request.contextPath}/resources/css/animate.css" rel="stylesheet">
         <!-- Icomoon Icon Fonts-->
         <link  href="${pageContext.request.contextPath}/resources/css/icomoon.css" rel="stylesheet">
-
         <!-- Bootstrap -->
         <link  href="${pageContext.request.contextPath}/resources/css/bootstrap.css" rel="stylesheet">
         <!-- Magnific Popup -->
@@ -42,9 +41,36 @@
         <!-- Modernizr JS -->
         <script src="${pageContext.request.contextPath}/resources/js/modernizr-2.6.2.min.js"></script>
         <link href="${pageContext.request.contextPath}/resources/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/teamvsteamstats.css">
+        <!--<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/teamVsTeam.css">-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="resources/css/search.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+            body {
+                margin: 0;
+            }
+            .point {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+            .round {
+                transform: rotate(-90deg);
+                transition: all 1s ease-in-out;
 
+                /* SVG */
+                fill: none;
+                stroke: green;
+                stroke-width: 8;
+                stroke-linecap: round;
+                stroke-dasharray: 0 999;
+            }
+        </style>
     </head>
     <body>
+
         <div class="fh5co-loader"></div>
         <div id="page">
             <nav class="fh5co-nav" role="navigation">
@@ -75,65 +101,96 @@
                 </div>
             </nav>
 
-            <select name="year" id="year" >
-                <option value="All">All</option>
-                <option value="2021">2021</option>
-                <option value="2020">2020</option>
-                <option value="2019">2019</option>
-                <option value="2018">2018</option>
-                <option value="2017">2017</option>
-                <option value="2016">2016</option>
-                <option value="2015">2015</option>
-                <option value="2014">2014</option>
-                <option value="2013">2013</option>
-                <option value="2012">2012</option>
-                <option value="2011">2011</option>
-                <option value="2010">2010</option>
-                <option value="2009">2009</option>
-                <option value="2008">2008</option>
-            </select> 
-            <select name="groundName" id="ground" onchange="">
-                <option value="All">All</option>
-                <c:forEach var="groundName" items="${groundName}" >
-                    <option value="${groundName.ground_id}">${groundName.ground_name}</option>
-                </c:forEach>
-            </select>
-            <button id="btn" type="" onclick="getData()">go
-            </button>
-            <bR>
-            <c:forEach var="teamvsteam" items="${teamvsteam}">
-                total match:${teamvsteam[0]}---
-                <br>
-                <c:forEach var="teamList1" items="${teamList1}">
+            <header id="fh5co-header" class="fh5co-cover" role="banner" data-stellar-background-ratio="0.5">
 
-                    ${teamList1.team_name} won :${teamvsteam[1]}---
-                    <br>
-                    ${teamList1.team_name} toss won:${teamvsteam[2]}---
-                    <br>
-                </c:forEach>
-                <c:forEach var="teamList2" items="${teamList2}">
-
-                    ${teamList2.team_name} won :${teamvsteam[0]-teamvsteam[1]}---
-                    <br>
-
-                    ${teamList2.team_name} toss won :${teamvsteam[0]-teamvsteam[2]}---
-                    <br>
-                </c:forEach>
-            </c:forEach>
-
-            <footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(${pageContext.request.contextPath}/resources/images/img_bg_1.jpg);" role="contentinfo">
+                <div class="overlay"></div>
+                <div id="fh5co-services" class="fh5co-bg-section testing">
+                    <div class="container">
+                        <div class="row">
+                            <section class="select-option">
+                                <div class="dropdown">
+                                    <select name="one" class="dropdown-select" onchange="getData()" id="year">
+                                        <option value="All" selected>All</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2008">2008</option>
+                                    </select>
+                                </div>
+                                <div class="dropdown dropdown-dark">
+                                    <select name="groundName" id="ground" onchange="getData()" class="dropdown-select">
+                                        <option value="All">All</option>
+                                        <c:forEach var="groundName" items="${groundName}" >
+                                            <option value="${groundName.ground_id}">${groundName.ground_name}</option>
+                                        </c:forEach>
+                                    </select>
+                                </div>
+                                <!--                                <div class="submitbtn">
+                                                                    <button id="btn" type="" class="submit" onclick="getData()">go</button>
+                                                                </div>-->
+                            </section>
+                        </div>
+                        <div class="table-responsive" style="margin-top: 60px;">
+                            <table class="table table-hover table-striped table-dark"
+                                   style="color: white; margin: auto; margin-top: 20px; font-size: 20px ">
+                                <thead style="color: darkorange;">
+                                    <tr>
+                                        <th scope="col">Statistics</th>
+                                        <th scope="col">Result</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <c:forEach var="teamvsteam" items="${teamvsteam}">
+                                        <tr>
+                                            <td>Total Match Played</td>
+                                            <td id="td1">${teamvsteam[0]}</td>
+                                        </tr>
+                                        <c:forEach var="teamList1" items="${teamList1}">
+                                            <tr>
+                                                <td>${teamList1.team_name} won</td>
+                                                <td id="td2">${teamvsteam[1]}</td>
+                                            </tr><tr>
+                                                <td>${teamList1.team_name} toss won</td>
+                                                <td id="td3">${teamvsteam[2]}</td>
+                                            </c:forEach>
+                                            <c:forEach var="teamList2" items="${teamList2}">
+                                            <tr>
+                                                <td>${teamList2.team_name} won</td>
+                                                <td id="td4">${teamvsteam[0]-teamvsteam[1]}</td>
+                                            </tr><tr>
+                                                <td> ${teamList2.team_name} toss</td>
+                                                <td id="td5">${teamvsteam[0]-teamvsteam[2]}</td>
+                                            </c:forEach>
+                                        </c:forEach> 
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(${pageContext.request.contextPath}/resources/images/img_bg_1.jpg);"  role="contentinfo">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row row-pb-md">
                         <div class="col-md-4 fh5co-widget">
-                            <h3>A Little About StatSports.</h3>
-                            <p>StateSports is an Indian sports website owned by Team Alpha. It features intresting facts about diffrent sports and live coverage of diffrent sports matches, player stats and team rankings.
+                            <h3 style="font-size: 18px">A Little About StatSports.</h3>
+                            <p style="font-size: 18px" >StateSports is an Indian sports website owned by Team Alpha. It features intresting facts about diffrent sports and live coverage of diffrent sports matches, player stats and team rankings.
                             </p>
                         </div>
                     </div>
                     <div class="row copyright">
                         <div class="col-md-12 text-center">
-                            <p>
+                            <p style="font-size: 20px" >
                                 <small class="block">&copy; 2021 State Sports. All Rights Reserved.</small> 
                                 <small class="block">Designed by Team Alpha </small>
                             </p>
@@ -157,13 +214,43 @@
                 <i class="fa fa-angle-double-up" style="font-size:48px;color:red"></i>
             </a>
         </div>
-                
+
         <script>
-            function sendRequest(sports_id) {
-                if ((sports_id == 1) || (sports_id == 2) || (sports_id == 4) || (sports_id == 5))
-                    window.location = '../SportStat/tournament?sports_id=' + sports_id;
-                else
-                    window.location = '../SportStat/construction';
+            $(document).ready(function () {
+                var $round = $('.round'),
+                        roundRadius = $round.find('circle').attr('r'),
+                        roundPercent = $round.data('percent'),
+                        roundCircum = 2 * roundRadius * Math.PI,
+                        roundDraw = roundPercent * roundCircum / 100
+                $round.css('stroke-dasharray', roundDraw + ' 999')
+            });
+        </script>
+        <script>
+            function getData() {
+                var x = document.getElementById("year").value;
+                var y = document.getElementById("ground").value;
+                console.log(x);
+                console.log(y);
+                $.ajax({
+                    type: "GET",
+                    url: "${pageContext.request.contextPath}/teamvsteam/advancefilter",
+                    data: {
+                        "ground_id": y,
+                        "tournament_id": ${param.tournament_id},
+                        "year": x,
+                        "team1": ${param.team1},
+                        "team2": ${param.team2}
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        var obj=data;
+                        $('#td1').html(obj[0][0]);
+                        $('#td2').html(obj[0][1]);
+                        $('#td3').html(obj[0][2]);
+                        $('#td4').html(obj[0][0]-obj[0][1]);
+                        $('#td5').html(obj[0][0]-obj[0][2]);
+                    }
+                });
             }
         </script>
         <!-- jQuery -->
@@ -186,31 +273,6 @@
         <!-- Main -->
         <script src="${pageContext.request.contextPath}/resources/js/main.js"></script>
         <script src="${pageContext.request.contextPath}/resources/js/modernizr-2.6.2.min.js"></script>
-        <script>
-            function getData() {
-                var x = document.getElementById("year").value;
-                var y = document.getElementById("ground").value;
-                console.log(x);
-                console.log(y);
-                $.ajax({
-                    type: "GET",
-                    url: "${pageContext.request.contextPath}/teamvsteam/advancefilter",
-                    data: {
-                        "ground_id": y,
-                        "tournament_id": ${param.tournament_id},
-                        "year": x,
-                        "team1": ${param.team1},
-                        "team2": ${param.team2}
-                    },
-                    success: function (data) {
-                        console.log(data);
-                        printdata(data);
-                    }
-                });
-            }
-            function printdata(data) {
-                console.log(data);
-            }
-        </script>
+
     </body>
 </html>
