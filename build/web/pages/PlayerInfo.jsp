@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <!--  This file has been downloaded from bootdey.com    @bootdey on twitter -->
         <!--  All snippets are MIT license http://bootdey.com/license -->
-        <title>profile with data and skills - Bootdey.com</title>
+        <title>Statsport - player profile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -396,7 +396,7 @@
                 <div class="row row-pb-md">
                     <div class="col-md-4 fh5co-widget">
                         <h3>A Little About StatSports.</h3>
-                        <p>StateSports is an Indian sports website owned by Team Alpha. It features intresting facts about diffrent sports and live coverage of diffrent sports matches, player stats and team rankings.
+                        <p>StatSports is an Indian sports website owned by Team Alpha. It features interesting facts about different sports and live coverage of different sports matches, player stats and team rankings.
                         </p>
                     </div>
                 </div>

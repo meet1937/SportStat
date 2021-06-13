@@ -8,7 +8,7 @@
         <!--<title>JSP Page</title>-->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Stamina &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
+        <title>StatSports &mdash; Grounds</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Free HTML5 Website Template by freehtml5.co"/>
         <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive"/>
@@ -164,7 +164,7 @@
                 <div class="row row-pb-md">
                     <div class="col-md-4 fh5co-widget">
                         <h3>A Little About StatSports.</h3>
-                        <p style="font-size: 18px">StateSports is an Indian sports website owned by Team Alpha. It features intresting facts about diffrent sports and live coverage of diffrent sports matches, player stats and team rankings.
+                        <p style="font-size: 18px">StatSports is an Indian sports website owned by Team Alpha. It features interesting facts about different sports and live coverage of different sports matches, player stats and team rankings.
                         </p>
                     </div>
                 </div>

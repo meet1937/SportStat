@@ -153,7 +153,7 @@
                     <div class="row row-pb-md">
                         <div class="col-md-4 fh5co-widget">
                             <h3>A Little About StatSports.</h3>
-                            <p>StateSports is an Indian sports website owned by Team Alpha. It features intresting facts about diffrent sports and live coverage of diffrent sports matches, player stats and team rankings.
+                            <p>StatSports is an Indian sports website owned by Team Alpha. It features interesting facts about different sports and live coverage of different sports matches, player stats and team rankings.
                             </p>
                         </div>
                     </div>

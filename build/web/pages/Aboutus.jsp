@@ -102,11 +102,11 @@
                                     </div>
 
                                     <ul class="fh5co-social-icons">
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                        <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+                                        <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+                                        <li><a href="https://www.linkedin.com/in/jaydutt-desai-1a9767191/"><i class="fa fa-linkedin"></i></a></li>
+                                        <!--<li><a href="#"><i class="fa fa-instagram"></i></a></li>-->
+                                        <li><a href="https://github.com/JD2552000"><i class="fa fa-github"></i></a></li>
                                     </ul>
 
                                 </div>
@@ -120,11 +120,11 @@
                                         <span><a href="#">Back End Developer</a></span>
                                     </div>
                                     <ul class="fh5co-social-icons">
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                        <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+                                        <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+                                        <li><a href="https://www.linkedin.com/in/meet-dhami-66b433190/"><i class="fa fa-linkedin"></i></a></li>
+                                        <!--<li><a href="#"><i class="fa fa-instagram"></i></a></li>-->
+                                        <li><a href="https://github.com/meet1937"><i class="fa fa-github"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -136,11 +136,11 @@
                                         <span><a href="#">Front End Developer</a></span>
                                     </div>
                                     <ul class="fh5co-social-icons">
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                        <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+                                        <li><a href="https://m.facebook.com/wonderboy.ayush"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/ayush-dalal-1a5a85175/"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.instagram.com/aayush_d_/"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="https://github.com/aayush1410-spider"><i class="fa fa-github"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -153,11 +153,11 @@
                                     </div>
 
                                     <ul class="fh5co-social-icons">
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                        <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+                                        <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+                                        <li><a href="https://www.linkedin.com/in/dunani-dhiraj-539a4619a/"><i class="fa fa-linkedin"></i></a></li>
+                                        <!--<li><a href="#"><i class="fa fa-instagram"></i></a></li>-->
+                                        <li><a href="https://github.com/Dhiraj5509/"><i class="fa fa-github"></i></a></li>
                                     </ul>
 
 
@@ -173,11 +173,11 @@
                                         <span><a href="#">Front End Developer</a></span>
                                     </div>
                                     <ul class="fh5co-social-icons">
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                        <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+                                        <li><a href="https://www.facebook.com/prashant.aghara.16/"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/prashant-aghara-300381212/"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.instagram.com/prashant_aghara/"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="https://github.com/PrashantAghara"><i class="fa fa-github"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -189,11 +189,11 @@
                                         <span><a href="#">Back End Developer</a></span>
                                     </div>
                                     <ul class="fh5co-social-icons">
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                        <li><a href="https://twitter.com/MaulikG59850502"><i class="fa fa-twitter"></i></a></li>
+                                        <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+                                        <li><a href="https://www.linkedin.com/in/maulik-gandhi-b2b137176/"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.instagram.com/maulikgandhi9"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="https://github.com/maulikgandhi9"><i class="fa fa-github"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -205,11 +205,11 @@
                                         <span><a href="#">Front End Developer</a></span>
                                     </div>
                                     <ul class="fh5co-social-icons">
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                        <li><a href="https://instagram.com/ayush_3150?utm_medium=copy_link"><i class="fa fa-twitter"></i></a></li>
+                                        <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+                                        <li><a href="https://www.linkedin.com/in/ayush-gandhi-8443a8176"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://instagram.com/ayush_3150?utm_medium=copy_link"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="https://github.com/ayush-3150"><i class="fa fa-github"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -221,11 +221,11 @@
                                         <span><a href="#">Front End Developer</a></span>
                                     </div>
                                     <ul class="fh5co-social-icons">
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                        <li><a href="https://twitter.com/avinash_hargun"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.facebook.com/avinash.hargun/"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/avinash-hargun-58286a176"><i class="fa fa-linkedin"></i></a></li>
+                                        <!--<li><a href=""><i class="fa fa-instagram"></i></a></li>-->
+                                        <li><a href="https://github.com/avihargun"><i class="fa fa-github"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -244,7 +244,7 @@
                     <div class="row row-pb-md">
                         <div class="col-md-4 fh5co-widget">
                             <h3>A Little About StatSports.</h3>
-                            <p>StateSports is an Indian sports website owned by Team Alpha. It features intresting facts about diffrent sports and live coverage of diffrent sports matches, player stats and team rankings.
+                            <p>StatSports is an Indian sports website owned by Team Alpha. It features interesting facts about different sports and live coverage of different sports matches, player stats and team rankings.
                             </p>
                         </div>
                     </div>
