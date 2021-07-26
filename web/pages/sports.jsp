@@ -68,6 +68,9 @@
                                     <li class="active">
                                         <a href="../SportStat/aboutus"  >About us</a>
                                     </li>
+                                     <li class="active">
+                                        <a href="../SportStat/schedule"  >Schedule's</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
